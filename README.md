@@ -2,6 +2,6 @@
 
 A reddit themed portfolio website!
 
-## Technology
+## Technology 💻
 
-Built with `React` `Typescript`
+Built with `React` and `Typescript`!

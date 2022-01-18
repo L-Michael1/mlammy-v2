@@ -1,7 +1,9 @@
-const Home = () => {
+import Navbar from '../../components/Navbar/Navbar'
+
+const Home = ({ theme, toggleTheme }: any) => {
     return (
         <div>
-            hey
+            <Navbar theme={theme} toggleTheme={toggleTheme} />
         </div>
     )
 }
