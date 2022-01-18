@@ -1,6 +1,6 @@
-# m-reddit 👽 
+# m-reddit 👽
 
-A reddit themed portfolio website! 
+A reddit themed portfolio website!
 
 ## Technology
 
