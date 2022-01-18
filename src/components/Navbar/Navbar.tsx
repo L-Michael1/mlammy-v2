@@ -6,17 +6,17 @@ import IconButton from '@mui/material/IconButton';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
-interface NavProps {
-    theme: String;
+type NavProps = {
+    themeType: string
     toggleTheme: () => void
 }
 
-const Navbar = ({ theme, toggleTheme }: NavProps) => {
+const Navbar = ({ themeType, toggleTheme }: NavProps) => {
     return (
         <HeaderContainer>
             <ToggleContainer>
                 <IconButton onClick={toggleTheme}>
-                    {theme === 'light' ? (
+                    {themeType === 'light' ? (
                         <DarkModeIcon sx={{ color: '#0ea5e9' }} />
                     ) : (
                         <LightModeIcon sx={{ color: '#0ea5e9' }} />

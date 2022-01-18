@@ -9,13 +9,13 @@ import GlobalStyle from './components/Theme/globalStyles'
 // Pages
 import Home from './pages/Home/Home'
 
-const App = () => {
+const App: React.FC = () => {
 
   let localTheme = localStorage.getItem('theme') ?? 'light';
 
   const [theme, setTheme] = useState<String>(localTheme);
 
-  const toggleTheme = () => {
+  const toggleTheme = (): void => {
     let toggledTheme = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', toggledTheme);
     setTheme(toggledTheme);
@@ -26,7 +26,7 @@ const App = () => {
       <ThemeProvider theme={theme === 'light' ? light : dark}>
         <GlobalStyle />
         <Routes>
-          <Route path='/' element={<Home theme={theme} toggleTheme={toggleTheme} />} />
+          <Route path='/' element={<Home themeType={theme} toggleTheme={toggleTheme} />} />
         </Routes>
       </ThemeProvider>
     </Router>

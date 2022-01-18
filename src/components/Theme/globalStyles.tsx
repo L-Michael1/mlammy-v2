@@ -1,8 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
-interface ThemeType {
-    body: string;
+type ThemeType = {
+    background: string;
+    canvas: string;
     text: string;
+    buttonCanvas: string;
 }
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
@@ -11,14 +13,18 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     * {
         margin: 0;
         font-family: 'Noto Sans', sans-serif;
+        transition: all 0.50s linear;
     }
 
     body {
-        background: ${({ theme }) => theme.body};
+        background: ${({ theme }) => theme.canvas};
         color: ${({ theme }) => theme.text};
-        transition: all 0.50s linear;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+    }
+
+    div {
+        background: ${({ theme }) => theme.background}
     }
 
     code {

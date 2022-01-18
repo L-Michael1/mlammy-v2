@@ -1,9 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
 
-const Home = ({ theme, toggleTheme }: any) => {
+const Home = ({ themeType, toggleTheme }: any) => {
     return (
         <div>
-            <Navbar theme={theme} toggleTheme={toggleTheme} />
+            <div>
+                hello
+            </div>
+            <Navbar themeType={themeType} toggleTheme={toggleTheme} />
         </div>
     )
 }

@@ -8,4 +8,5 @@ export const HeaderContainer = styled.div`
 export const ToggleContainer = styled.div`
     display: table;
     margin-left: auto;
+    background-color: ${({ theme }) => theme.buttonCanvas}
 `;

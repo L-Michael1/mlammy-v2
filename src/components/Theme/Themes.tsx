@@ -1,8 +1,12 @@
 export const light = {
-    body: '#DAE0E6',
-    text: '#030303',
+    background: '#FFFFFF',
+    canvas: '#DAE0E6',
+    text: '#1A1A1B',
+    buttonCanvas: '#0079D3'
 }
 export const dark = {
-    body: '#1A1A1B',
+    background: '#1A1A1B',
+    canvas: '#030303',
     text: '#DAE0E6',
+    buttonCanvas: '#ff4500',
 }
