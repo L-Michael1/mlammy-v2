@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "m-reddit",
+  "name": "Personal reddit-themed portfolio",
   "icons": [
     {
       "src": "favicon.ico",
