@@ -23,10 +23,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
         -moz-osx-font-smoothing: grayscale;
     }
 
-    div {
-        background: ${({ theme }) => theme.background}
-    }
-
     code {
         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
             monospace;
