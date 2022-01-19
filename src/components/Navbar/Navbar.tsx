@@ -17,7 +17,7 @@ type NavProps = {
 const Navbar = ({ themeType, toggleTheme }: NavProps) => {
 
     const [scrolled, setScrolled] = useState<boolean>(false);
-    const navItems = ['about', 'experience', 'projects', 'skills', 'content'];
+    const navItems = ['about', 'experience', 'projects', 'skills', 'contact'];
 
     // Update state on scroll
     useEffect(() => {
