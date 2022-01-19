@@ -1,11 +1,39 @@
 import Navbar from '../../components/Navbar/Navbar'
+import Landing from '../../components/Landing/Landing'
 import Typewriter from '../../components/Typewriter/Typewriter'
 
 const Home = ({ themeType, toggleTheme }: any) => {
     return (
         <>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
-            <Typewriter text="Michael Lam" textAlign="center" initDelay={0} minTypeSpeed={120} maxTypeSpeed={140} />
+            <Landing />
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
         </>
     )
 }

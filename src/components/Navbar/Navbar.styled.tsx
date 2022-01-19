@@ -6,7 +6,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     position: fixed;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     top: 0;
     z-index: 1;
     width: 100%;
@@ -19,7 +19,7 @@ export const NavContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 80%;
     width: 100%;
     margin: auto;
     padding: 1rem;

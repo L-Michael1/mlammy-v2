@@ -22,12 +22,12 @@ const Typewriter = ({ text, textAlign, minTypeSpeed, maxTypeSpeed, initDelay }: 
         font-size: 5rem;
         margin: 0rem;
         color: ${({ theme }) => theme.accent};
-        &:before {
-            content: '<  ';
+         &:before {
+            content: ' ';
         }
-        &:after{
+        /* &:after{
             content: '  />'
-        }
+        }  */
         @media (max-width: 480px) {
             font-size: 1.5rem;
         }
@@ -70,7 +70,7 @@ const Typewriter = ({ text, textAlign, minTypeSpeed, maxTypeSpeed, initDelay }: 
     return (
         <Containter>
             <Text>{string}</Text>
-            {/* <Blink>&nbsp;</Blink> */}
+            <Blink>&nbsp;</Blink>
         </Containter>
     )
 }
