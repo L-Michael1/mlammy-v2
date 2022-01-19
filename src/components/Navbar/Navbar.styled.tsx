@@ -10,6 +10,7 @@ export const Container = styled.div`
     top: 0;
     z-index: 1;
     width: 100%;
+    box-shadow: ${({ theme, scrolled }: any) => scrolled ? `0 2px 8px ${theme.shadow}` : '0px'};
 `
 
 export const NavContainer = styled.div`

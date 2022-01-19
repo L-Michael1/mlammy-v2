@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react'
+
 // Components
 import { motion } from 'framer-motion';
 import { Container, Heading, NavContainer, NavLink } from './Navbar.styled';
@@ -14,11 +16,31 @@ type NavProps = {
 
 const Navbar = ({ themeType, toggleTheme }: NavProps) => {
 
+    const [scrolled, setScrolled] = useState<boolean>(false);
     const navItems = ['about', 'experience', 'projects', 'skills', 'content'];
 
-    return (
-        <Container>
+    // Update state on scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 10;
+            if (isScrolled !== scrolled) {
+                setScrolled(!scrolled);
+            }
+        };
 
+        // On scroll => handleScroll();
+        document.addEventListener('scroll', handleScroll, { passive: true });
+
+        // Clean up the event handler when the component unmounts
+        return () => {
+            document.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrolled]);
+
+    return (
+        //TODO: fix this ts err
+        //@ts-ignore
+        <Container scrolled={scrolled}>
             <NavContainer>
                 <div>
                     <Heading
@@ -38,6 +60,7 @@ const Navbar = ({ themeType, toggleTheme }: NavProps) => {
                             initial={{ y: -150, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 1 + (idx / 4), duration: 0.8, type: 'spring', stiffness: 200 }}
+                            key={idx}
                         >
                             {item}
                         </NavLink>
@@ -58,7 +81,6 @@ const Navbar = ({ themeType, toggleTheme }: NavProps) => {
                 </div>
             </NavContainer>
         </Container>
-
     )
 };
 
