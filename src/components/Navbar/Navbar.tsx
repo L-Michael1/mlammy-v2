@@ -75,7 +75,7 @@ const Navbar = ({ themeType, toggleTheme }: NavProps) => {
                         {themeType === 'light' ? (
                             <DarkModeIcon sx={{ color: '#818cf8' }} />
                         ) : (
-                            <LightModeIcon sx={{ color: '#34d399' }} />
+                            <LightModeIcon sx={{ color: '#8cf5d7' }} />
                         )}
                     </IconButton>
                 </div>
