@@ -1,12 +1,12 @@
 export const light = {
     background: '#FFFFFF',
-    canvas: '#DAE0E6',
-    text: '#1A1A1B',
-    buttonCanvas: '#0079D3'
+    primary: '#000000',
+    secondary: '#6B7280',
+    accent: '#818CF8',
 }
 export const dark = {
-    background: '#1A1A1B',
-    canvas: '#030303',
-    text: '#DAE0E6',
-    buttonCanvas: '#ff4500',
+    background: '#0D192E',
+    primary: '#CED7F3',
+    secondary: '#8A93AD',
+    accent: '#34D399',
 }

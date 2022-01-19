@@ -1,12 +1,23 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const HeaderContainer = styled.div`
+export const Heading = styled(motion.span)`
+    font-weight: 900;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.accent};
+`
+
+export const NavContainer = styled.div`
     display: flex;
-    padding: 16px;
-`;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 1rem;
+`
 
-export const ToggleContainer = styled.div`
-    display: table;
-    margin-left: auto;
-    background-color: ${({ theme }) => theme.buttonCanvas}
-`;
+export const NavLink = styled(motion.a)`
+    margin: 1rem;
+    text-decoration: none;
+`

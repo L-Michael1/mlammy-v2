@@ -1,6 +1,6 @@
-# m-reddit 👽
+# mlammy-v2 👽
 
-A reddit themed portfolio website!
+Personal portfolio
 
 ## Technology 💻
 
