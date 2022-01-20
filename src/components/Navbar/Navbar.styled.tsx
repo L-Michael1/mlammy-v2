@@ -40,5 +40,6 @@ export const NavLink = styled(motion.a)`
     text-decoration: none;
     :hover{
         color: ${({ theme }) => theme.accent};
+        cursor: pointer;
     }
 `
