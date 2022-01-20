@@ -23,10 +23,6 @@ export const AboutContainer = styled.div`
         width: 80%;
     }
 
-    @media (max-width: 600px){ 
-        margin-top: 16rem;
-    }
-
 `
 
 export const Heading = styled.h1`
