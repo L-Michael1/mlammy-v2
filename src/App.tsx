@@ -13,7 +13,7 @@ const App: React.FC = () => {
 
   let localTheme = localStorage.getItem('theme') ?? 'light';
 
-  const [theme, setTheme] = useState<String>(localTheme);
+  const [theme, setTheme] = useState<string>(localTheme);
 
   const toggleTheme = (): void => {
     let toggledTheme = theme === 'light' ? 'dark' : 'light';
