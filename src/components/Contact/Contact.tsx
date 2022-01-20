@@ -4,6 +4,7 @@ import { MdEmail } from 'react-icons/md'
 import { RiFilePaper2Fill } from 'react-icons/ri'
 import { Container, IconWrapper } from './Contact.styled'
 import { motion } from 'framer-motion'
+import Resume from '../../assets/resume.pdf'
 
 type ContactProps = {
     themeType: string
@@ -26,7 +27,7 @@ const Contact = ({ themeType }: ContactProps) => {
             icon: <MdEmail color={color} size='2rem' />,
         },
         {
-            link: 'resume',
+            link: Resume,
             icon: <RiFilePaper2Fill color={color} size='2rem' />,
         }
     ]
