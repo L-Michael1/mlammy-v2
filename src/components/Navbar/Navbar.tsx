@@ -77,7 +77,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
                     <Heading
                         initial={{ y: -150, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.6, duration: 0.8, type: 'spring', stiffness: 200 }}
+                        transition={{ delay: 0.2, duration: 0.7, type: 'spring', stiffness: 200 }}
                     >
                         Michael Lam
                     </Heading>
@@ -89,7 +89,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
                             onClick={() => executeScroll(item.ref)}
                             initial={{ y: -150, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 1 + (idx / 4), duration: 0.8, type: 'spring', stiffness: 200 }}
+                            transition={{ delay: 0.6 + (idx / 4), duration: 0.7, type: 'spring', stiffness: 200 }}
                             key={idx}
                         >
                             {item.itemName}
@@ -100,7 +100,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
                         component={motion.div}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 2.1, duration: 0.8, type: 'tween' }}
+                        transition={{ delay: 1.8, duration: 0.8, type: 'tween' }}
                     >
                         {themeType === 'light' ? (
                             <DarkModeIcon sx={{ color: '#818cf8' }} />
