@@ -1,4 +1,4 @@
-import { createRef, useRef } from 'react'
+import { useRef } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'

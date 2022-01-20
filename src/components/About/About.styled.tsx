@@ -43,3 +43,8 @@ export const Heading = styled.h1`
 export const Text = styled.p`
     line-height: 1.75rem;
 `
+
+export const Link = styled(motion.a)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.accent}
+`
