@@ -1,5 +1,7 @@
+import { useRef } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
+import About from '../../components/About/About'
 
 type HomeProps = {
     themeType: string;
@@ -7,37 +9,14 @@ type HomeProps = {
 }
 
 const Home = ({ themeType, toggleTheme }: HomeProps) => {
+
+    const aboutRef = useRef<HTMLDivElement>(null);
+
     return (
         <>
-            <Navbar themeType={themeType} toggleTheme={toggleTheme} />
+            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} />
             <Landing themeType={themeType} />
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
+            <About ref={aboutRef} />
         </>
     )
 }

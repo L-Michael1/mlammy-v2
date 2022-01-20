@@ -12,12 +12,38 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 type NavProps = {
     themeType: string
     toggleTheme: () => void
+    aboutRef: React.RefObject<HTMLDivElement>
+    // expRef: React.RefObject<HTMLDivElement>
+    // projectRef: React.RefObject<HTMLDivElement>
+    // skillsRef: React.RefObject<HTMLDivElement>
+    // contactRef: React.RefObject<HTMLDivElement>
 }
 
-const Navbar = ({ themeType, toggleTheme }: NavProps) => {
+const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
 
     const [scrolled, setScrolled] = useState<boolean>(false);
-    const navItems = ['about', 'experience', 'projects', 'skills', 'contact'];
+    const navItems = [
+        {
+            itemName: 'about',
+            ref: aboutRef
+        },
+        {
+            itemName: 'experience',
+            ref: aboutRef
+        },
+        {
+            itemName: 'projects',
+            ref: aboutRef
+        },
+        {
+            itemName: 'skills',
+            ref: aboutRef
+        },
+        {
+            itemName: 'contact',
+            ref: aboutRef
+        }
+    ];
 
     // Update state on scroll
     useEffect(() => {
@@ -37,6 +63,13 @@ const Navbar = ({ themeType, toggleTheme }: NavProps) => {
         };
     }, [scrolled]);
 
+    // Scroll into section
+    const executeScroll = (currentRef: React.RefObject<HTMLDivElement>): any => {
+        if (currentRef.current !== null) {
+            currentRef.current.scrollIntoView()
+        }
+    }
+
     return (
         <Container scrolled={scrolled}>
             <NavContainer>
@@ -50,17 +83,16 @@ const Navbar = ({ themeType, toggleTheme }: NavProps) => {
                     </Heading>
                 </div>
 
-                {/* TODO: Links scroll into section */}
                 <div>
                     {navItems.map((item, idx) => (
                         <NavLink
-                            href={`#${item}`}
+                            onClick={() => executeScroll(item.ref)}
                             initial={{ y: -150, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 1 + (idx / 4), duration: 0.8, type: 'spring', stiffness: 200 }}
                             key={idx}
                         >
-                            {item}
+                            {item.itemName}
                         </NavLink>
                     ))}
                     <IconButton

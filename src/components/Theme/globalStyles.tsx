@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
         margin: 0;
         font-family: 'Nunito', sans-serif;
         transition: all 0.3s linear;
+        scroll-behavior: smooth;
     }
 
     body {
