@@ -8,9 +8,5 @@ export const Container = styled(motion.div)`
     gap: 1.5rem;
 `
 
-export const IconWrapper = styled.div`
-    &:hover {
-        cursor: pointer;
-        transform: translateY(-3px);
-    }
+export const IconWrapper = styled(motion.div)`
 `
