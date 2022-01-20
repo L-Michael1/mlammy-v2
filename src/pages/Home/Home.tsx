@@ -1,6 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
-import Typewriter from '../../components/Typewriter/Typewriter'
 
 type HomeProps = {
     themeType: string;

@@ -38,8 +38,6 @@ const Navbar = ({ themeType, toggleTheme }: NavProps) => {
     }, [scrolled]);
 
     return (
-        //TODO: fix this ts err
-        //@ts-ignore
         <Container scrolled={scrolled}>
             <NavContainer>
                 <div>

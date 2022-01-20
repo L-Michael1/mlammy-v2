@@ -4,6 +4,7 @@ import { MdEmail } from 'react-icons/md'
 import { RiFilePaper2Fill } from 'react-icons/ri'
 import { Container, IconWrapper } from './Contact.styled'
 import { motion } from 'framer-motion'
+import Resume from '../../assets/resume.pdf'
 
 type ContactProps = {
     themeType: string
@@ -26,7 +27,7 @@ const Contact = ({ themeType }: ContactProps) => {
             icon: <MdEmail color={color} size='2rem' />,
         },
         {
-            link: 'resume',
+            link: Resume,
             icon: <RiFilePaper2Fill color={color} size='2rem' />,
         }
     ]
@@ -43,7 +44,7 @@ const Contact = ({ themeType }: ContactProps) => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 3.75 + (idx / 4), duration: 0.8, type: 'spring', stiffness: 50 }}
                     >
-                        <a href={contact.link} target='_blank'>
+                        <a href={contact.link} target='_blank' rel="noreferrer">
                             {contact.icon}
                         </a>
                     </IconWrapper>
