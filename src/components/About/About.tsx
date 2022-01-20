@@ -4,7 +4,6 @@ import { Container, AboutContainer, Heading, Text } from './About.styled'
 const About = (props: any, ref: any) => {
 
     return (
-        //@ts-ignore
         <Container ref={ref}>
             <AboutContainer>
                 <Heading>about</Heading>

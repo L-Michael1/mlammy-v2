@@ -17,12 +17,16 @@ export const AboutContainer = styled.div`
     max-width: 80%;
     width: 50%;
     margin-top: 24rem;
-    line-height: 1.75rem;
 
-    @media (max-width: 600px){
+    @media (max-width: 900px){
         margin-top: 18rem;
         width: 80%;
     }
+
+    @media (max-width: 600px){ 
+        margin-top: 16rem;
+    }
+
 `
 
 export const Heading = styled.h1`
@@ -37,5 +41,5 @@ export const Heading = styled.h1`
 `
 
 export const Text = styled.p`
-
+    line-height: 1.75rem;
 `

@@ -13,10 +13,10 @@ type NavProps = {
     themeType: string
     toggleTheme: () => void
     aboutRef: React.RefObject<HTMLDivElement>
-    // expRef: any
-    // projectRef: any
-    // skillsRef: any
-    // contactRef: any
+    // expRef: React.RefObject<HTMLDivElement>
+    // projectRef: React.RefObject<HTMLDivElement>
+    // skillsRef: React.RefObject<HTMLDivElement>
+    // contactRef: React.RefObject<HTMLDivElement>
 }
 
 const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
@@ -63,6 +63,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
         };
     }, [scrolled]);
 
+    // Scroll into section
     const executeScroll = (currentRef: React.RefObject<HTMLDivElement>): any => {
         if (currentRef.current !== null) {
             currentRef.current.scrollIntoView()
@@ -82,7 +83,6 @@ const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
                     </Heading>
                 </div>
 
-                {/* TODO: Links scroll into section */}
                 <div>
                     {navItems.map((item, idx) => (
                         <NavLink
