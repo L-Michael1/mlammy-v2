@@ -50,7 +50,10 @@ export const CardFooter = ({ children }: any) => {
 export const Card = ({ width, children }: CardProps) => {
     return (
         <Container>
-            <CardContainer width={width}>
+            <CardContainer
+                whileHover={{ scale: 1.02 }}
+                width={width}
+            >
                 {children}
             </CardContainer>
         </Container>

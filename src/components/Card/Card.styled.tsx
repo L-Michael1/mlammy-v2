@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 type CardContainerProps = {
     width: number
@@ -43,18 +44,21 @@ export const FooterContainer = styled.div`
     padding-top: 1rem;
     color: ${({ theme }) => theme.secondary};
     word-spacing: 1rem;
+
+    :hover{
+        color: ${({ theme }) => theme.accent};
+    }
 `
 
-
 // Card
-export const Container = styled.div`
+export const Container = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 `
 
-export const CardContainer = styled.div<CardContainerProps>`
+export const CardContainer = styled(motion.div) <CardContainerProps>`
     background-color: ${({ theme }) => theme.card};
     max-width: 85%;
     width: ${({ width }) => `${width}px` ?? '100%'};
