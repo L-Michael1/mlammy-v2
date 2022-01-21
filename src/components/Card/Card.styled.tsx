@@ -20,6 +20,10 @@ export const SubContainer = styled.div`
 
 export const Link = styled.a`
     font-size: 22px;
+
+    :hover{
+        color: ${({ theme }) => theme.accent};
+    }
 `
 
 export const Title = styled.h3`
