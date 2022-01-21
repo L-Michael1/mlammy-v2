@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'
+import Experience from '../../components/Experience/Experience'
 import { Card, CardHeader, CardContent, CardFooter } from '../../components/Card/Card'
 import { GoMarkGithub } from 'react-icons/go'
 type HomeProps = {
@@ -18,6 +19,7 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
             <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} />
             <Landing themeType={themeType} />
             <About ref={aboutRef} />
+            <Experience />
         </>
     )
 }
