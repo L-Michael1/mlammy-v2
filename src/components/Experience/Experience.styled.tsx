@@ -9,7 +9,6 @@ export const ExperienceContainer = styled.div`
 
     @media (max-width: 900px){
         margin-top: 18rem;
-        width: 80%;
     }
 `
 
