@@ -1,4 +1,3 @@
-import React from 'react';
 import { ContentContainer, Container, CardContainer, HeaderContainer, FooterContainer, SubContainer, Link, Title, Date } from './Card.styled'
 
 type CardHeaderProps = {
