@@ -20,7 +20,10 @@ export const SubContainer = styled.div`
 
 export const Link = styled.a`
     font-size: 22px;
-    color: ${({ theme }) => theme.primary};
+
+    :hover{
+        color: ${({ theme }) => theme.accent};
+    }
 `
 
 export const Title = styled.h3`
@@ -56,6 +59,10 @@ export const Container = styled(motion.div)`
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    @media (max-width: 900px){
+        width: 85%;
+    }
 `
 
 export const CardContainer = styled(motion.div) <CardContainerProps>`
