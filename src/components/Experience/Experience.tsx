@@ -17,7 +17,7 @@ const Experience = () => {
                     avatarLink='https://github.com'
                 />
                 <CardContent>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda natus asperiores quos vero incidunt amet expedita rerum voluptatum aliquam repellendus exercitationem dolorum, nihil quisquam ducimus minus error ipsum consectetur.
+                    Tulip is a company that provides software as a service that aims at digitizing retail. At Tulip, I was part of the Checkout team working as a Backend Software Developer. I worked on a range of tasks such as: creating backend endpoints in PHP, SQL query optimizations, reducing time complexity within the codebase, optimizing a metric dashboard for API requests in Grafana, reducing PHP errors/warnings by 80% in GCP logs, bug fixes, and more.
                 </CardContent>
                 <CardFooter>
                     Backend PHP MySQL
