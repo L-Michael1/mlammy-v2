@@ -1,10 +1,11 @@
+import React, { forwardRef } from 'react'
 import { ExperienceContainer, Heading } from './Experience.styled'
 import { Card, CardHeader, CardContent, CardFooter } from '../Card/Card'
 import { AiOutlineLink } from 'react-icons/ai'
 
-const Experience = () => {
+const Experience = (props: any, ref: any) => {
     return (
-        <ExperienceContainer>
+        <ExperienceContainer ref={ref}>
             <Heading>experience</Heading>
             <br />
             <Card width={650}>
@@ -25,4 +26,4 @@ const Experience = () => {
     )
 }
 
-export default Experience
+export default forwardRef(Experience)

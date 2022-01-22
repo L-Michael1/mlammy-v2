@@ -13,13 +13,13 @@ type NavProps = {
     themeType: string
     toggleTheme: () => void
     aboutRef: React.RefObject<HTMLDivElement>
-    // expRef: React.RefObject<HTMLDivElement>
+    expRef: React.RefObject<HTMLDivElement>
     // projectRef: React.RefObject<HTMLDivElement>
     // skillsRef: React.RefObject<HTMLDivElement>
     // contactRef: React.RefObject<HTMLDivElement>
 }
 
-const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
+const Navbar = ({ themeType, toggleTheme, aboutRef, expRef }: NavProps) => {
 
     const [scrolled, setScrolled] = useState<boolean>(false);
     const navItems = [
@@ -29,7 +29,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef }: NavProps) => {
         },
         {
             itemName: 'experience',
-            ref: aboutRef
+            ref: expRef
         },
         {
             itemName: 'projects',
