@@ -20,7 +20,7 @@ export const ExperienceContainer = styled.div`
 `
 
 export const Heading = styled.h1`
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     &:before {
         content: '< ';

@@ -20,7 +20,7 @@ export const AboutContainer = styled.div`
     text-align: center;
     flex-direction: column;
     max-width: 80%;
-    width: 50%;
+    width: 40%;
 
     @media (max-width: 900px){
         width: 80%;
@@ -29,7 +29,7 @@ export const AboutContainer = styled.div`
 `
 
 export const Heading = styled.h1`
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     &:before {
         content: '< ';
@@ -41,6 +41,7 @@ export const Heading = styled.h1`
 
 export const Text = styled.p`
     line-height: 1.75rem;
+    font-size: 1.25rem;
 `
 
 export const Link = styled(motion.a)`
