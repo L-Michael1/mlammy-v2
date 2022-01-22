@@ -45,7 +45,6 @@ export const CardFooter = ({ children }: any) => {
     )
 }
 
-
 export const Card = ({ width, children }: CardProps) => {
     return (
         <Container>
