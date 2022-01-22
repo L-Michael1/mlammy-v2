@@ -1,28 +1,30 @@
 import React, { forwardRef } from 'react'
-import { ExperienceContainer, Heading } from './Experience.styled'
+import { Container, ExperienceContainer, Heading } from './Experience.styled'
 import { Card, CardHeader, CardContent, CardFooter } from '../Card/Card'
 import { AiOutlineLink } from 'react-icons/ai'
 
 const Experience = (props: any, ref: any) => {
     return (
-        <ExperienceContainer ref={ref}>
-            <Heading>experience</Heading>
-            <br />
-            <Card width={650}>
-                <CardHeader
-                    date='Sep 2021 - Dec 2021'
-                    title='Tulip - Software Developer Intern'
-                    avatar={<AiOutlineLink />}
-                    avatarLink='https://tulip.com'
-                />
-                <CardContent>
-                    Tulip is a company that provides software as a service that aims at digitizing retail. At Tulip, I was part of the Checkout team working as a Backend Software Developer. I worked on a range of tasks such as: creating backend endpoints in PHP, SQL query optimizations, reducing time complexity within the codebase, optimizing a metric dashboard for API requests in Grafana, reducing PHP errors/warnings by 80% in GCP logs, bug fixes, and more.
-                </CardContent>
-                <CardFooter>
-                    Backend PHP MySQL
-                </CardFooter>
-            </Card>
-        </ExperienceContainer>
+        <Container ref={ref}>
+            <ExperienceContainer>
+                <Heading>experience</Heading>
+                <br />
+                <Card width={650}>
+                    <CardHeader
+                        date='Sep 2021 - Dec 2021'
+                        title='Tulip - Software Developer Intern'
+                        avatar={<AiOutlineLink />}
+                        avatarLink='https://tulip.com'
+                    />
+                    <CardContent>
+                        Tulip is a company that provides software as a service that aims at digitizing retail. At Tulip, I was part of the Checkout team working as a Backend Software Developer. I worked on a range of tasks such as: creating backend endpoints in PHP, SQL query optimizations, reducing time complexity within the codebase, optimizing a metric dashboard for API requests in Grafana, reducing PHP errors/warnings by 80% in GCP logs, bug fixes, and more.
+                    </CardContent>
+                    <CardFooter>
+                        Backend PHP MySQL
+                    </CardFooter>
+                </Card>
+            </ExperienceContainer>
+        </Container>
     )
 }
 
