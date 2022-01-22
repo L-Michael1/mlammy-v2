@@ -11,7 +11,7 @@ const Projects = () => {
             title: 'Ikigai',
             content: 'Developing a full-stack gamified productivity web-app for users to create daily to-dos, build habits, and help users reach their short-term and long-term goals - all connected with a reward system.',
             footer: 'React MySQL Express.js Node.js Framer-Motion Styled-Components JWT',
-            link: 'https://github.com/L-Michael1/ikigai'
+            link: 'https://github.com/L-Michael1/ikigai',
         },
         {
             date: 'Dec 2021 - Jan 2021',
@@ -45,7 +45,12 @@ const Projects = () => {
             <ProjectsContainer>
                 {projects.map((project, idx) => (
                     <Card width={450} key={idx}>
-                        <CardHeader date={project.date} avatar={<AiOutlineLink />} avatarLink='https://github.com' title={project.title} />
+                        <CardHeader
+                            date={project.date}
+                            avatar={<AiOutlineLink />}
+                            avatarLink={project.link}
+                            title={project.title}
+                        />
                         <CardContent>
                             {project.content}
                         </CardContent>
