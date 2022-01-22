@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'
 import Experience from '../../components/Experience/Experience'
+import Projects from '../../components/Projects/Projects'
 
 type HomeProps = {
     themeType: string;
@@ -20,6 +21,7 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
             <Landing themeType={themeType} />
             <About ref={aboutRef} />
             <Experience ref={expRef} />
+            <Projects />
         </>
     )
 }

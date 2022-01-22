@@ -58,7 +58,7 @@ export const Container = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 
     @media (max-width: 900px){
         width: 85%;
