@@ -3,8 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'
 import Experience from '../../components/Experience/Experience'
-import { Card, CardHeader, CardContent, CardFooter } from '../../components/Card/Card'
-import { GoMarkGithub } from 'react-icons/go'
+
 type HomeProps = {
     themeType: string;
     toggleTheme: () => void;
@@ -13,13 +12,14 @@ type HomeProps = {
 const Home = ({ themeType, toggleTheme }: HomeProps) => {
 
     const aboutRef = useRef<HTMLDivElement>(null);
+    const expRef = useRef<HTMLDivElement>(null);
 
     return (
         <>
-            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} />
+            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} />
             <Landing themeType={themeType} />
             <About ref={aboutRef} />
-            <Experience />
+            <Experience ref={expRef} />
         </>
     )
 }
