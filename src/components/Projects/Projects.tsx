@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Container, ProjectsContainer, Heading } from './Projects.styled'
 import { Card, CardHeader, CardContent, CardFooter } from '../Card/Card'
 import { AiOutlineLink } from 'react-icons/ai'
 
-const Projects = () => {
+const Projects = (props: any, ref: any) => {
 
     const projects = [
         {
@@ -37,8 +37,8 @@ const Projects = () => {
     ]
 
     return (
-        <Container>
-            <Heading>
+        <Container ref={ref}>
+            <Heading >
                 projects
             </Heading>
             <br />
@@ -60,8 +60,8 @@ const Projects = () => {
                     </Card>
                 ))}
             </ProjectsContainer>
-        </Container>
+        </Container >
     );
 }
 
-export default Projects
+export default forwardRef(Projects)

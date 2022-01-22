@@ -14,12 +14,12 @@ type NavProps = {
     toggleTheme: () => void
     aboutRef: React.RefObject<HTMLDivElement>
     expRef: React.RefObject<HTMLDivElement>
-    // projectRef: React.RefObject<HTMLDivElement>
+    projectRef: React.RefObject<HTMLDivElement>
     // skillsRef: React.RefObject<HTMLDivElement>
     // contactRef: React.RefObject<HTMLDivElement>
 }
 
-const Navbar = ({ themeType, toggleTheme, aboutRef, expRef }: NavProps) => {
+const Navbar = ({ themeType, toggleTheme, aboutRef, expRef, projectRef }: NavProps) => {
 
     const [scrolled, setScrolled] = useState<boolean>(false);
     const navItems = [
@@ -33,7 +33,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef, expRef }: NavProps) => {
         },
         {
             itemName: 'projects',
-            ref: aboutRef
+            ref: projectRef
         },
         {
             itemName: 'skills',
@@ -66,7 +66,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef, expRef }: NavProps) => {
     // Scroll into section
     const executeScroll = (currentRef: React.RefObject<HTMLDivElement>): any => {
         if (currentRef.current !== null) {
-            currentRef.current.scrollIntoView()
+            currentRef.current.scrollIntoView({ block: "center", inline: "nearest" });
         }
     }
 

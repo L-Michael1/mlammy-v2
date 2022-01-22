@@ -6,6 +6,11 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 24rem;
+
+    @media (max-width: 900px){
+        margin-top: 18rem;
+    }
 `
 
 export const AboutContainer = styled.div`
@@ -16,10 +21,8 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     max-width: 80%;
     width: 50%;
-    margin-top: 24rem;
 
     @media (max-width: 900px){
-        margin-top: 18rem;
         width: 80%;
     }
 

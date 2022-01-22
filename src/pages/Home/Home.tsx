@@ -14,14 +14,15 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
 
     const aboutRef = useRef<HTMLDivElement>(null);
     const expRef = useRef<HTMLDivElement>(null);
+    const projectRef = useRef<HTMLDivElement>(null);
 
     return (
         <>
-            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} />
+            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} projectRef={projectRef} />
             <Landing themeType={themeType} />
             <About ref={aboutRef} />
             <Experience ref={expRef} />
-            <Projects />
+            <Projects ref={projectRef} />
             <h1>Test</h1>
             <h1>Test</h1>
             <h1>Test</h1>

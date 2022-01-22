@@ -6,7 +6,11 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 22rem;
+    margin-top: 24rem;
+
+    @media (max-width: 900px){
+        margin-top: 18rem;
+    }
 `
 
 export const ProjectsContainer = styled.div`
