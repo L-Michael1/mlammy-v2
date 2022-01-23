@@ -17,10 +17,11 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
     const aboutRef = useRef<HTMLDivElement>(null);
     const expRef = useRef<HTMLDivElement>(null);
     const projectRef = useRef<HTMLDivElement>(null);
+    const skillsRef = useRef<HTMLDivElement>(null);
 
     return (
         <>
-            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} projectRef={projectRef} />
+            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} projectRef={projectRef} skillsRef={skillsRef} />
             <Landing themeType={themeType} />
             <Fade>
                 <About ref={aboutRef} />
@@ -32,7 +33,7 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
                 <Projects ref={projectRef} />
             </Fade>
             <Fade>
-                <Skills />
+                <Skills ref={skillsRef} />
             </Fade>
             <h1>Test</h1>
             <h1>Test</h1>

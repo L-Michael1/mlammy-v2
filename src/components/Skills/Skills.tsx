@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Container, Heading, SubHeading, SplitContainer, SkillsContainer, CardsContainer } from './Skills.styled'
 import { Card, CardFooter } from '../Card/Card'
 
@@ -16,7 +16,7 @@ import material from '../../assets/icons/material-ui.svg'
 import node from '../../assets/icons/node.svg'
 import firebase from '../../assets/icons/firebase.svg'
 
-const Skills = () => {
+const Skills = (props: any, ref: any) => {
 
     const languages = [
         {
@@ -73,7 +73,7 @@ const Skills = () => {
     ]
 
     return (
-        <Container>
+        <Container ref={ref}>
             <Heading>skills</Heading>
             <SplitContainer>
                 <SkillsContainer>
@@ -103,4 +103,4 @@ const Skills = () => {
     )
 }
 
-export default Skills;
+export default forwardRef(Skills);
