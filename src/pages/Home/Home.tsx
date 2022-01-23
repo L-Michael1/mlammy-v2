@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import Fade from 'react-reveal/Fade'
 import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'
@@ -20,9 +21,15 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
         <>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} projectRef={projectRef} />
             <Landing themeType={themeType} />
-            <About ref={aboutRef} />
-            <Experience ref={expRef} />
-            <Projects ref={projectRef} />
+            <Fade>
+                <About ref={aboutRef} />
+            </Fade>
+            <Fade>
+                <Experience ref={expRef} />
+            </Fade>
+            <Fade>
+                <Projects ref={projectRef} />
+            </Fade>
             <h1>Test</h1>
             <h1>Test</h1>
             <h1>Test</h1>
