@@ -103,9 +103,9 @@ const Navbar = ({ themeType, toggleTheme, aboutRef, expRef, projectRef }: NavPro
                         transition={{ delay: 1.8, duration: 0.8, type: 'tween' }}
                     >
                         {themeType === 'light' ? (
-                            <DarkModeIcon sx={{ color: '#818cf8' }} />
+                            <DarkModeIcon sx={{ color: '#ffab8a' }} />
                         ) : (
-                            <LightModeIcon sx={{ color: '#8cf5d7' }} />
+                            <LightModeIcon sx={{ color: '#a4f8e0' }} />
                         )}
                     </IconButton>
                 </div>

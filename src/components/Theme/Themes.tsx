@@ -1,16 +1,16 @@
 export const light = {
-    background: '#FFFFFF',
+    background: '#fff7f7',
     primary: '#000000',
     secondary: '#6B7280',
-    accent: '#818CF8',
+    accent: '#ffab8a',
     card: '#FFFFFF',
     shadow: '#98A8BC33',
 }
 export const dark = {
-    background: '#0D192E',
-    primary: '#CED7F3',
+    background: '#152847',
+    primary: '#d1d9f1',
     secondary: '#8A93AD',
-    accent: '#8CF5D7',
-    card: '#14233E',
-    shadow: '#0A1528',
+    accent: '#a4f8e0',
+    card: '#1a2d50',
+    shadow: '#091427',
 }
