@@ -5,6 +5,7 @@ import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'
 import Experience from '../../components/Experience/Experience'
 import Projects from '../../components/Projects/Projects'
+import Skills from '../../components/Skills/Skills'
 
 type HomeProps = {
     themeType: string;
@@ -29,6 +30,9 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
             </Fade>
             <Fade>
                 <Projects ref={projectRef} />
+            </Fade>
+            <Fade>
+                <Skills />
             </Fade>
             <h1>Test</h1>
             <h1>Test</h1>
