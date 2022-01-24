@@ -1,9 +1,9 @@
 export const light = {
-    background: '#fff7f7',
+    background: '#ffffff',
     primary: '#000000',
     secondary: '#6B7280',
-    accent: '#ffab8a',
-    card: '#FFFFFF',
+    accent: '#8aa9ff',
+    card: '#ffffff',
     shadow: '#98A8BC33',
 }
 export const dark = {

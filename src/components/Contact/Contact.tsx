@@ -12,7 +12,7 @@ type ContactProps = {
 
 const Contact = ({ themeType }: ContactProps) => {
 
-    const color = themeType === 'light' ? '#ffab8a' : '#a4f8e0'
+    const color = themeType === 'light' ? '#8aa9ff' : '#a4f8e0'
     const contacts = [
         {
             link: 'https://github.com/L-Michael1',

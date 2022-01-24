@@ -103,7 +103,7 @@ const Navbar = ({ themeType, toggleTheme, aboutRef, expRef, projectRef, skillsRe
                         transition={{ delay: 1.8, duration: 0.8, type: 'tween' }}
                     >
                         {themeType === 'light' ? (
-                            <DarkModeIcon sx={{ color: '#ffab8a' }} />
+                            <DarkModeIcon sx={{ color: '#8aa9ff' }} />
                         ) : (
                             <LightModeIcon sx={{ color: '#a4f8e0' }} />
                         )}
