@@ -34,7 +34,11 @@ const Landing = ({ themeType }: landingProps) => {
                 </SubText>
                 <Contact themeType={themeType} />
             </HeaderContainer>
-            <ImageContainer>
+            <ImageContainer
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 3, duration: 0.8 }}
+            >
                 <Image src={Michael} />
             </ImageContainer>
         </Container>
