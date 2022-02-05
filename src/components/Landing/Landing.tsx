@@ -1,6 +1,7 @@
 // Components
-import { Container, HeaderContainer, SubText, HeaderText } from './Landing.styled'
+import { Container, HeaderContainer, SubText, HeaderText, ImageContainer, Image } from './Landing.styled'
 import Contact from '../Contact/Contact'
+import Michael from '../../assets/michael.png'
 
 type landingProps = {
     themeType: string
@@ -33,6 +34,9 @@ const Landing = ({ themeType }: landingProps) => {
                 </SubText>
                 <Contact themeType={themeType} />
             </HeaderContainer>
+            <ImageContainer>
+                <Image src={Michael} />
+            </ImageContainer>
         </Container>
     )
 };
