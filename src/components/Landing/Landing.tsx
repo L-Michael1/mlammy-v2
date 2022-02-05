@@ -30,7 +30,7 @@ const Landing = ({ themeType }: landingProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2.7, duration: 0.8 }}
                 >
-                    Third Year Computer Science Student at the University of Guelph
+                    Computer Science Student at the University of Guelph
                 </SubText>
                 <Contact themeType={themeType} />
             </HeaderContainer>
