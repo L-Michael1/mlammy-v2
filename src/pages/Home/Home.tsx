@@ -32,9 +32,9 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
             <Fade>
                 <Projects ref={projectRef} />
             </Fade>
-            <Fade>
+            {/* <Fade>
                 <Skills ref={skillsRef} />
-            </Fade>
+            </Fade> */}
             <h1>Test</h1>
             <h1>Test</h1>
             <h1>Test</h1>

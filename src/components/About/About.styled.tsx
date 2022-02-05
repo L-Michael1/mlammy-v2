@@ -3,10 +3,14 @@ import { motion } from 'framer-motion'
 
 export const Container = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     margin-top: 24rem;
+
+    @media (max-width: 1350px){
+        flex-direction: column;
+    }
 
     @media (max-width: 900px){
         margin-top: 18rem;
@@ -26,6 +30,19 @@ export const AboutContainer = styled.div`
         width: 80%;
     }
 
+`
+
+export const SkillsContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 25%;
+
+    @media (max-width: 1350px){
+        justify-content: center;
+        margin-top: 3rem;
+        max-width: 70%;
+    }
 `
 
 export const Heading = styled.h1`
