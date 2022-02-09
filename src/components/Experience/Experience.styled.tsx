@@ -17,13 +17,6 @@ export const Container = styled.div`
 `
 
 export const ExperienceContainer = styled.div`
-    /* display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2rem;
-    max-width: 100%;
-    width: 100%; */
-
     display: flex;
     justify-content: center;
     align-items: center;
