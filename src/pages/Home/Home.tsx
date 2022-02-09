@@ -27,18 +27,40 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
             <Fade>
                 <About ref={aboutRef} />
             </Fade>
+
+            <Fade>
+                <Experience ref={expRef} />
+            </Fade>
+            {/* <Fade>
+                <Projects ref={projectRef} />
+            </Fade>
+            <Fade>
+                <Skills ref={skillsRef} />
+            </Fade> */}
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
             <Fade>
                 <Footer />
             </Fade>
-            {/* <Fade>
-                <Experience ref={expRef} />
-            </Fade>
-            <Fade>
-                <Projects ref={projectRef} />
-            </Fade> */}
-            {/* <Fade>
-                <Skills ref={skillsRef} />
-            </Fade> */}
         </>
     )
 }
