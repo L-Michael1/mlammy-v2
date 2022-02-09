@@ -6,6 +6,7 @@ import About from '../../components/About/About'
 import Experience from '../../components/Experience/Experience'
 import Projects from '../../components/Projects/Projects'
 import Skills from '../../components/Skills/Skills'
+import Footer from '../../components/Footer/Footer'
 
 type HomeProps = {
     themeType: string;
@@ -27,35 +28,17 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
                 <About ref={aboutRef} />
             </Fade>
             <Fade>
+                <Footer />
+            </Fade>
+            {/* <Fade>
                 <Experience ref={expRef} />
             </Fade>
             <Fade>
                 <Projects ref={projectRef} />
-            </Fade>
+            </Fade> */}
             {/* <Fade>
                 <Skills ref={skillsRef} />
             </Fade> */}
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
         </>
     )
 }

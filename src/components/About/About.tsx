@@ -79,7 +79,7 @@ const About = (props: any, ref: any) => {
                 <br />
                 <Text>
                     Hey! I'm currently a third year Computer Science student at the University of Guelph, and I have a passion for web
-                    development. The creativity needed, the use of variable technologies, and the fun logic behind it will continuously
+                    development. The creativity needed, the use of various technologies, and the fun logic behind it will continuously
                     drive my passion for web development. I was a previous Co-op student at Tulip working as a Backend Developer - I loved
                     the people, the work, and the atmosphere. Aside from my passion for programming, I'm an avid gym-goer, and I like to keep
                     fit all around. I also love playing sports, exploring nature, watching korean dramas, and anime.
