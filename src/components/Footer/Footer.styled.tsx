@@ -8,6 +8,16 @@ export const Container = styled.div`
     padding: 1rem;
     padding-right: 12rem;
     padding-left: 12rem;
+
+    @media(max-width: 900px){
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+
+    @media(max-width: 600px){
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
 `
 
 export const Button = styled(motion.button)`
