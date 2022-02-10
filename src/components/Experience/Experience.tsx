@@ -10,7 +10,7 @@ const Experience = (props: any, ref: any) => {
             <ExperienceContainer>
                 <Heading>experience</Heading>
                 <br />
-                <Card width={800}>
+                <Card width={90}>
                     <CardHeader
                         date='Sep 2021 - Dec 2021'
                         title='Tulip - Software Developer Intern'

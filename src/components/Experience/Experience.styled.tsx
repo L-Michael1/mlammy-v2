@@ -22,7 +22,11 @@ export const ExperienceContainer = styled.div`
     align-items: center;
     flex-direction: column;
     max-width: 80%;
-    width: 40%;
+    width: 45%;
+
+    @media (max-width: 1350px){
+        width: 70%;
+    }
 
     @media (max-width: 900px){
         width: 80%;

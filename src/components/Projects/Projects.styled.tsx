@@ -17,22 +17,16 @@ export const Container = styled.div`
 `
 
 export const ProjectsContainer = styled.div`
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 65%;
-    width: 100%;
-    gap: 15px;
-
-    @media (max-width: 1550px){
-        max-width: 90%
-    } */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 80%;
-    width: 40%;
+    width: 45%;
+
+    @media (max-width: 1350px){
+        width: 70%;
+    }
 
     @media (max-width: 900px){
         width: 80%;

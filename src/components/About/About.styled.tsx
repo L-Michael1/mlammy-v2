@@ -26,6 +26,10 @@ export const AboutContainer = styled.div`
     max-width: 80%;
     width: 40%;
 
+    @media (max-width: 1350px){
+        width: 65%;
+    }
+
     @media (max-width: 900px){
         width: 80%;
     }
