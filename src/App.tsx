@@ -11,7 +11,7 @@ import Home from './pages/Home/Home'
 
 const App: React.FC = () => {
 
-  let localTheme = localStorage.getItem('theme') ?? 'light';
+  let localTheme = localStorage.getItem('theme') ?? 'dark';
 
   const [theme, setTheme] = useState<string>(localTheme);
 
