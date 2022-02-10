@@ -80,8 +80,8 @@ const Skills = (props: any, ref: any) => {
                     <SubHeading>Languages</SubHeading>
                     <CardsContainer>
                         {languages.map((language, idx) => (
-                            <Card width={110} key={idx}>
-                                <img src={language.icon} height="110" alt={language.name} />
+                            <Card width={90} key={idx}>
+                                <img src={language.icon} height="90" alt={language.name} />
                                 <CardFooter>{language.name}</CardFooter>
                             </Card>
                         ))}
@@ -91,8 +91,8 @@ const Skills = (props: any, ref: any) => {
                     <SubHeading>Technologies</SubHeading>
                     <CardsContainer>
                         {technologies.map((tech, idx) => (
-                            <Card width={110} key={idx}>
-                                <img src={tech.icon} height="110" alt={tech.name} />
+                            <Card width={90} key={idx}>
+                                <img src={tech.icon} height="90" alt={tech.name} />
                                 <CardFooter>{tech.name}</CardFooter>
                             </Card>
                         ))}
