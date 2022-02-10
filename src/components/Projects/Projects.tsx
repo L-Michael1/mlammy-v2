@@ -1,7 +1,10 @@
 import React, { forwardRef } from 'react';
-import { Container, ProjectsContainer, Heading } from './Projects.styled'
+import { Container, ProjectsContainer, Heading, CardContainer, ImageContainer, Image, SubContainer } from './Projects.styled'
 import { Card, CardHeader, CardContent, CardFooter } from '../Card/Card'
 import { AiOutlineLink } from 'react-icons/ai'
+import Blueprint from '../../assets/blueprint.png'
+import Coding from '../../assets/coding.png'
+
 
 const Projects = (props: any, ref: any) => {
 
@@ -38,29 +41,39 @@ const Projects = (props: any, ref: any) => {
 
     return (
         <Container ref={ref}>
-            <Heading >
-                projects
-            </Heading>
-            <br />
             <ProjectsContainer>
+                <Heading >
+                    projects
+                </Heading>
+                <br />
                 {projects.map((project, idx) => (
-                    <Card width={450} key={idx}>
-                        <CardHeader
-                            date={project.date}
-                            avatar={<AiOutlineLink />}
-                            avatarLink={project.link}
-                            title={project.title}
-                        />
-                        <CardContent>
-                            {project.content}
-                        </CardContent>
-                        <CardFooter>
-                            {project.footer}
-                        </CardFooter>
-                    </Card>
+                    <CardContainer>
+                        <Card width={800} key={idx}>
+                            <CardHeader
+                                date={project.date}
+                                avatar={<AiOutlineLink />}
+                                avatarLink={project.link}
+                                title={project.title}
+                            />
+                            <CardContent>
+                                {project.content}
+                            </CardContent>
+                            <CardFooter>
+                                {project.footer}
+                            </CardFooter>
+                        </Card>
+                    </CardContainer>
                 ))}
             </ProjectsContainer>
-        </Container >
+            <SubContainer>
+                <ImageContainer>
+                    <Image src={Coding} height={250} />
+                </ImageContainer>
+                <ImageContainer>
+                    <Image src={Blueprint} height={250} />
+                </ImageContainer>
+            </SubContainer>
+        </Container>
     );
 }
 

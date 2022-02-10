@@ -24,8 +24,8 @@ const Experience = (props: any, ref: any) => {
                         using PHP. I also developed and helped design the database structures for Tulip iDevices using
                         MySQL. There were also various smaller tasks that I had the pleasure of working on; such as: MySQL
                         query optimizations, time complexity reduction of functions, and a metric dashboard optimization for an
-                        API container using Grafana. I was also able to reduce the number of errors and warnings by 80% in
-                        our GCP logs for Tulip's major API container.
+                        API container using Grafana. My favourite accomplishment at Tulip was that I was able to reduce the
+                        number of errors and warnings by 90% in our GCP logs for a major API container!
                     </CardContent>
                     <CardFooter>
                         Backend PHP MySQL APIs Optimization
@@ -36,7 +36,7 @@ const Experience = (props: any, ref: any) => {
                 {/* It prevents passing the referrer information to the target website by removing the referral info from the HTTP header. */}
                 {/* This means that in Google analytics traffic coming from links that have the rel=”noreferrer” attribute will show as Direct Traffic instead of Referral. */}
                 <a href="https://tulip.io" target="_blank" rel="noreferrer">
-                    <Image src={tulip} alt="Tulip.io" />
+                    <Image src={tulip} alt="Tulip.io" height={250} />
                 </a>
             </ImageContainer>
         </Container>

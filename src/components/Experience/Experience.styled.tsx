@@ -36,7 +36,7 @@ export const ImageContainer = styled.div`
     width: 100%;
 
     @media (max-width: 1350px){
-        max-width: 70%;
+        display: none;
     }
 `
 
