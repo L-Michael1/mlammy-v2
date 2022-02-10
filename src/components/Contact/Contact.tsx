@@ -36,6 +36,7 @@ const Contact = ({ themeType }: ContactProps) => {
         <Container>
             {contacts.map((contact, idx) => (
                 <motion.div
+                    key={idx}
                     whileHover={{ scale: 1.1 }}
                 >
                     <IconWrapper

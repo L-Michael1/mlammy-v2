@@ -47,8 +47,8 @@ const Projects = (props: any, ref: any) => {
                 </Heading>
                 <br />
                 {projects.map((project, idx) => (
-                    <CardContainer>
-                        <Card width={800} key={idx}>
+                    <CardContainer key={idx}>
+                        <Card width={800}>
                             <CardHeader
                                 date={project.date}
                                 avatar={<AiOutlineLink />}
