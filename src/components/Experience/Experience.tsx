@@ -21,11 +21,11 @@ const Experience = (props: any, ref: any) => {
                         Tulip is a company that provides software as a service that aims at digitizing retail.
                         At Tulip, I was apart of the Checkout team working as a Backend Software Developer. I
                         worked on a range of different tasks. I developed the API and integrations for Tulip iDevices
-                        using PHP. I also developed and helped design the database structures for Tulip iDevices using
-                        MySQL. There were also various smaller tasks that I had the pleasure of working on; such as: MySQL
-                        query optimizations, time complexity reduction of functions, and a metric dashboard optimization for an
-                        API container using Grafana. My favourite accomplishment at Tulip was that I was able to reduce the
-                        number of errors and warnings by 90% in our GCP logs for a major API container!
+                        using PHP. I also developed the database structures for Tulip iDevices using MySQL. There were
+                        also various smaller tasks that I had the pleasure of working on; such as: MySQL
+                        query optimizations, and a metric dashboard optimization for an API container using Grafana. My
+                        favourite accomplishment at Tulip was that I was able to reduce the number of errors and warnings
+                        by 80% in our GCP logs for a major API container.
                     </CardContent>
                     <CardFooter>
                         Backend PHP MySQL APIs Optimization
