@@ -1,11 +1,18 @@
 // Components
-import { Container, HeaderContainer, SubText, HeaderText, ImageContainer, Image } from './Landing.styled'
-import Contact from '../Contact/Contact'
-import Michael from '../../assets/michael.png'
+import {
+    Container,
+    HeaderContainer,
+    SubText,
+    HeaderText,
+    ImageContainer,
+    Image,
+} from "./Landing.styled";
+import Contact from "../Contact/Contact";
+import Michael from "../../assets/michael.png";
 
 type landingProps = {
-    themeType: string
-}
+    themeType: string;
+};
 
 const Landing = ({ themeType }: landingProps) => {
     return (
@@ -14,7 +21,12 @@ const Landing = ({ themeType }: landingProps) => {
                 <SubText
                     initial={{ y: -35, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 2.1, duration: 1.2, yoyo: Infinity, opacity: 1 }}
+                    transition={{
+                        delay: 2.1,
+                        duration: 1.2,
+                        yoyo: Infinity,
+                        opacity: 1,
+                    }}
                 >
                     👋 Hey there! My name is
                 </SubText>
@@ -42,7 +54,7 @@ const Landing = ({ themeType }: landingProps) => {
                 <Image src={Michael} />
             </ImageContainer>
         </Container>
-    )
+    );
 };
 
 export default Landing;

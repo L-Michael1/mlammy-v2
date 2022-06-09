@@ -1,20 +1,19 @@
-import { useRef } from 'react'
-import Fade from 'react-reveal/Fade'
-import Navbar from '../../components/Navbar/Navbar'
-import Landing from '../../components/Landing/Landing'
-import About from '../../components/About/About'
-import Experience from '../../components/Experience/Experience'
-import Projects from '../../components/Projects/Projects'
-import Skills from '../../components/Skills/Skills'
-import Footer from '../../components/Footer/Footer'
+import { useRef } from "react";
+import Fade from "react-reveal/Fade";
+import Navbar from "../../components/Navbar/Navbar";
+import Landing from "../../components/Landing/Landing";
+import About from "../../components/About/About";
+import Experience from "../../components/Experience/Experience";
+import Projects from "../../components/Projects/Projects";
+import Skills from "../../components/Skills/Skills";
+import Footer from "../../components/Footer/Footer";
 
 type HomeProps = {
     themeType: string;
     toggleTheme: () => void;
-}
+};
 
 const Home = ({ themeType, toggleTheme }: HomeProps) => {
-
     const aboutRef = useRef<HTMLDivElement>(null);
     const expRef = useRef<HTMLDivElement>(null);
     const projectRef = useRef<HTMLDivElement>(null);
@@ -22,13 +21,20 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
 
     return (
         <>
-            <Navbar themeType={themeType} toggleTheme={toggleTheme} aboutRef={aboutRef} expRef={expRef} projectRef={projectRef} skillsRef={skillsRef} />
+            <Navbar
+                themeType={themeType}
+                toggleTheme={toggleTheme}
+                aboutRef={aboutRef}
+                expRef={expRef}
+                projectRef={projectRef}
+                skillsRef={skillsRef}
+            />
             <Landing themeType={themeType} />
             <Fade>
                 <About ref={aboutRef} />
             </Fade>
 
-            <Fade>
+            {/* <Fade>
                 <Experience ref={expRef} />
             </Fade>
             <Fade>
@@ -39,9 +45,9 @@ const Home = ({ themeType, toggleTheme }: HomeProps) => {
             </Fade>
             <Fade>
                 <Footer />
-            </Fade>
+            </Fade> */}
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
