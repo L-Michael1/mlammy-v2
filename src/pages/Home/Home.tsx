@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import Fade from "react-reveal/Fade";
 import Navbar from "../../components/Navbar/Navbar";
 import Landing from "../../components/Landing/Landing";
@@ -14,25 +13,13 @@ type HomeProps = {
 };
 
 const Home = ({ themeType, toggleTheme }: HomeProps) => {
-    const aboutRef = useRef<HTMLDivElement>(null);
-    const expRef = useRef<HTMLDivElement>(null);
-    const projectRef = useRef<HTMLDivElement>(null);
-    const skillsRef = useRef<HTMLDivElement>(null);
-
     return (
         <>
-            <Navbar
-                themeType={themeType}
-                toggleTheme={toggleTheme}
-                aboutRef={aboutRef}
-                expRef={expRef}
-                projectRef={projectRef}
-                skillsRef={skillsRef}
-            />
-            <Landing themeType={themeType} />
+            <Navbar themeType={themeType} toggleTheme={toggleTheme} />
+            {/* <Landing themeType={themeType} />
             <Fade>
                 <About ref={aboutRef} />
-            </Fade>
+            </Fade> */}
 
             {/* <Fade>
                 <Experience ref={expRef} />
