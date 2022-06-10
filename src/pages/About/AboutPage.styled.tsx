@@ -27,6 +27,8 @@ export const DescriptionContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
 `;
 
 export const Description = styled.span`
@@ -39,6 +41,7 @@ export const Highlight = styled.span`
 `;
 
 export const ImageWrapper = styled.div`
+    padding-right: 3%;
     @media (max-width: 64em) {
         display: none;
     }

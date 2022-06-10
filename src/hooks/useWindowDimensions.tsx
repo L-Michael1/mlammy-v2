@@ -1,4 +1,3 @@
-import { getEventListeners } from "events";
 import { useState, useEffect } from "react";
 import { WindowDimensionsProps } from "./useWindowDimensions.types";
 
@@ -28,4 +27,4 @@ const useWindowDimensions = (): WindowDimensionsProps => {
     return windowDimensions;
 };
 
-export default useWindowDimensions;
+export { useWindowDimensions };
