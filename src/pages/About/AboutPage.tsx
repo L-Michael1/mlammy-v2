@@ -36,10 +36,11 @@ const AboutScreen: React.FC<AboutPageProps> = ({ themeType, toggleTheme }) => {
                         passion for full-stack development. I was a previous
                         intern at Tulip working as a Backend Developer on the
                         Checkout Team. I loved the people, the tasks, and the
-                        atmosphere. Aside from my passion for programming, I'm
-                        an avid gym-goer, and I like to keep fit all around. I
-                        also love playing sports, exploring nature, watching
-                        korean dramas, and anime.
+                        atmosphere. I'm also currently alongside some partners
+                        to build a fitness mobile-app! Aside from my passion for
+                        programming, I'm an avid gym-goer, and I like to keep
+                        fit all around. I also love playing sports, exploring
+                        nature, watching korean dramas, and anime.
                     </Description>
                 </DescriptionContainer>
                 <ImageWrapper>
