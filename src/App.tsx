@@ -1,36 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Components
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import { light, dark } from './components/Theme/Themes'
-import GlobalStyle from './components/Theme/globalStyles'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { light, dark } from "./components/Theme/Themes";
+import GlobalStyle from "./components/Theme/globalStyles";
 
 // Pages
-import Home from './pages/Home/Home'
+import { AboutPage } from "./pages/About";
 
 const App: React.FC = () => {
+    let localTheme = localStorage.getItem("theme") ?? "dark";
 
-  let localTheme = localStorage.getItem('theme') ?? 'dark';
+    const [theme, setTheme] = useState<string>(localTheme);
 
-  const [theme, setTheme] = useState<string>(localTheme);
+    const toggleTheme = (): void => {
+        let toggledTheme = theme === "light" ? "dark" : "light";
+        localStorage.setItem("theme", toggledTheme);
+        setTheme(toggledTheme);
+    };
 
-  const toggleTheme = (): void => {
-    let toggledTheme = theme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', toggledTheme);
-    setTheme(toggledTheme);
-  }
-
-  return (
-    <Router>
-      <ThemeProvider theme={theme === 'light' ? light : dark}>
-        <GlobalStyle />
-        <Routes>
-          <Route path='/' element={<Home themeType={theme} toggleTheme={toggleTheme} />} />
-        </Routes>
-      </ThemeProvider>
-    </Router>
-  );
+    return (
+        <Router>
+            <ThemeProvider theme={theme === "light" ? light : dark}>
+                <GlobalStyle />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <AboutPage
+                                themeType={theme}
+                                toggleTheme={toggleTheme}
+                            />
+                        }
+                    />
+                </Routes>
+            </ThemeProvider>
+        </Router>
+    );
 };
 
 export default App;
