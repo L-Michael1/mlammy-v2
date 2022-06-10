@@ -46,6 +46,8 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
         };
     }, [scrolled]);
 
+    console.log(scrolled);
+
     return (
         <Container scrolled={scrolled}>
             <HeaderContainer>
@@ -64,6 +66,7 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
             </HeaderContainer>
             <NavContainer>
                 {navItems.map((item, idx) => (
+                    // TODO: Change to react router nav link
                     <NavLink
                         initial={{ y: -150, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}

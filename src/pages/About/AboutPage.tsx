@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "../../components/Navbar";
 import greyscale_michael from "../../assets/greyscale_michael.png";
 import {
@@ -17,7 +17,30 @@ type AboutPageProps = {
     toggleTheme: () => void;
 };
 
+type windowDimensionsProps = {
+    width: number;
+    height: number;
+};
+
 const AboutScreen: React.FC<AboutPageProps> = ({ themeType, toggleTheme }) => {
+    const [windowDimensions, setWindowDimensions] =
+        useState<windowDimensionsProps>({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        }
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [windowDimensions]);
+
     return (
         <div>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
@@ -46,6 +69,11 @@ const AboutScreen: React.FC<AboutPageProps> = ({ themeType, toggleTheme }) => {
                 <ImageWrapper>
                     <Image src={greyscale_michael} />
                 </ImageWrapper>
+                {windowDimensions.width > 1024 ? (
+                    <div>i am big</div>
+                ) : (
+                    <div>I am small</div>
+                )}
             </AboutPageContainer>
         </div>
     );
