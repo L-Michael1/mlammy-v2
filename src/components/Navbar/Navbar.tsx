@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import {
     Container,
@@ -16,7 +16,7 @@ import { MobileNavbar } from "./MobileNavbar";
 import { useScroll } from "../../hooks/useScroll";
 
 const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
-    const { width, height } = useWindowDimensions();
+    const { width } = useWindowDimensions();
     const scrolled = useScroll();
     const navItems = [
         {
@@ -37,9 +37,9 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
     ];
 
     return (
-        <>
+        <Container scrolled={scrolled}>
             {width > 1024 ? (
-                <Container scrolled={scrolled}>
+                <>
                     <HeaderContainer>
                         <Heading
                             initial={{ y: -150, opacity: 0 }}
@@ -89,11 +89,11 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                             )}
                         </IconButton>
                     </NavContainer>
-                </Container>
+                </>
             ) : (
-                <MobileNavbar />
+                <MobileNavbar themeType={themeType} toggleTheme={toggleTheme} />
             )}
-        </>
+        </Container>
     );
 };
 

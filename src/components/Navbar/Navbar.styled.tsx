@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+import { NavLink as Nav } from "react-router-dom";
 
 type ContainerProps = {
     scrolled: boolean;
@@ -17,6 +18,11 @@ export const Container = styled.div<ContainerProps>`
     width: 100%;
     box-shadow: ${({ theme, scrolled }) =>
         scrolled ? `0 2px 8px ${theme.shadow}` : "0px"};
+
+    @media (max-width: 64em) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 `;
 
 export const NavContainer = styled.div`
@@ -25,7 +31,7 @@ export const NavContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
+    max-width: 85%;
     width: 100%;
     margin: auto;
     padding: 1rem;
@@ -43,6 +49,14 @@ export const Heading = styled(motion.span)`
     font-weight: 900;
     text-transform: uppercase;
     color: ${({ theme }) => theme.accent};
+
+    @media (max-width: 64em) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 32em) {
+        font-size: 1.25rem;
+    }
 `;
 
 export const NavLink = styled(motion.a)`
@@ -53,4 +67,51 @@ export const NavLink = styled(motion.a)`
         color: ${({ theme }) => theme.secondary};
         cursor: pointer;
     }
+`;
+
+export const HamburgerContainer = styled.div`
+    z-index: 999;
+`;
+
+const fadeIn = keyframes`
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 85%;
+    }
+`;
+
+const fadeOut = keyframes`
+    from {
+        opacity: 85%;
+    }
+    to {
+        opacity: 0%;
+    }
+`;
+
+export const MobileMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: ${({ theme }) => theme.primary};
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    opacity: 85%;
+    animation: ${fadeIn} 0.5s linear;
+`;
+
+export const LinkWrapper = styled.li`
+    font-size: 2rem;
+    text-transform: uppercase;
+`;
+
+export const Link = styled(Nav)`
+    color: ${({ theme }) => theme.secondary};
 `;

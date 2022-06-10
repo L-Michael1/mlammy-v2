@@ -36,7 +36,7 @@ export const Description = styled.span`
 `;
 
 export const Highlight = styled.span`
-    color: #2a2a2a;
+    color: ${({ theme }) => theme.primary};
     font-weight: 800;
 `;
 
