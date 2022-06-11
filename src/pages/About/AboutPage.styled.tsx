@@ -9,16 +9,22 @@ export const AboutPageContainer = styled.div`
 
     @media (max-width: 64em) {
         flex-direction: column;
+        margin: 10rem 4rem 0rem 4rem;
     }
 `;
 
-export const HeaderContainer = styled.div``;
+export const HeaderContainer = styled.div`
+    @media (max-width: 64em) {
+        margin-bottom: 4rem;
+    }
+`;
 
 export const Header = styled.h1`
     transform: rotate(270deg);
     font-size: 2.5rem;
 
     @media (max-width: 64em) {
+        font-size: 2rem;
         transform: none;
     }
 `;
