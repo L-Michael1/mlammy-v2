@@ -82,15 +82,6 @@ const fadeIn = keyframes`
     }
 `;
 
-const fadeOut = keyframes`
-    from {
-        opacity: 85%;
-    }
-    to {
-        opacity: 0%;
-    }
-`;
-
 export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -113,5 +104,15 @@ export const LinkWrapper = styled.li`
 `;
 
 export const Link = styled(Nav)`
-    color: ${({ theme }) => theme.secondary};
+    margin: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    :hover {
+        color: ${({ theme }) => theme.secondary};
+    }
+
+    @media (max-width: 64em) {
+        color: ${({ theme }) => theme.secondary};
+        text-decoration: underline;
+    }
 `;

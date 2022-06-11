@@ -13,15 +13,7 @@ import {
     Link,
     HamburgerContainer,
 } from "./Navbar.styled";
-
-const pages: Array<string> = [
-    "About",
-    "Experience",
-    "Projects",
-    "Skills",
-    "Contact",
-    "Archive",
-];
+import { pages } from "./NavbarConstants";
 
 const MobileNavbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -68,7 +60,7 @@ const MobileNavbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                 >
                     {pages.map((page) => (
                         <LinkWrapper>
-                            <Link to={page}>{page}</Link>
+                            <Link to={page.link}>{page.name}</Link>
                         </LinkWrapper>
                     ))}
                 </ul>
