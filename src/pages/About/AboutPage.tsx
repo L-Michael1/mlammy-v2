@@ -11,11 +11,7 @@ import {
     Header,
     Highlight,
 } from "./AboutPage.styled";
-
-type AboutPageProps = {
-    themeType: string;
-    toggleTheme: () => void;
-};
+import { AboutPageProps } from "./AboutPage.types";
 
 const AboutScreen: React.FC<AboutPageProps> = ({ themeType, toggleTheme }) => {
     return (
