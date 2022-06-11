@@ -11,9 +11,9 @@ import {
     Header,
     Highlight,
 } from "./AboutPage.styled";
-import { AboutPageProps } from "./AboutPage.types";
+import { PageProps } from "../../types/common.types";
 
-const AboutScreen: React.FC<AboutPageProps> = ({ themeType, toggleTheme }) => {
+const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
         <div>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />

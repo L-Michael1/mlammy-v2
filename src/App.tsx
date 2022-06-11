@@ -8,6 +8,7 @@ import GlobalStyle from "./components/Theme/globalStyles";
 
 // Pages
 import { AboutPage } from "./pages/About";
+import { ArchivePage } from "./pages/Archive";
 
 const App: React.FC = () => {
     let localTheme = localStorage.getItem("theme") ?? "dark";
@@ -29,6 +30,15 @@ const App: React.FC = () => {
                         path="/"
                         element={
                             <AboutPage
+                                themeType={theme}
+                                toggleTheme={toggleTheme}
+                            />
+                        }
+                    />
+                    <Route
+                        path="archive"
+                        element={
+                            <ArchivePage
                                 themeType={theme}
                                 toggleTheme={toggleTheme}
                             />
