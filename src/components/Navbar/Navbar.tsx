@@ -4,8 +4,8 @@ import {
     Container,
     Heading,
     NavContainer,
-    NavLink,
     HeaderContainer,
+    Link,
 } from "./Navbar.styled";
 import IconButton from "@mui/material/IconButton";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
@@ -14,36 +14,11 @@ import { NavProps } from "./Navbar.types";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import { MobileNavbar } from "./MobileNavbar";
 import { useScroll } from "../../hooks/useScroll";
+import { pages } from "./NavbarConstants";
 
 const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
     const { width } = useWindowDimensions();
     const scrolled = useScroll();
-    const navItems = [
-        {
-            name: "about",
-            link: "/",
-        },
-        {
-            name: "experience",
-            link: "experience",
-        },
-        {
-            name: "projects",
-            link: "projects",
-        },
-        {
-            name: "skills",
-            link: "skills",
-        },
-        {
-            name: "contact",
-            link: "contact",
-        },
-        {
-            name: "archive",
-            link: "archive",
-        },
-    ];
 
     return (
         <Container scrolled={scrolled}>
@@ -64,22 +39,10 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                         </Heading>
                     </HeaderContainer>
                     <NavContainer>
-                        {navItems.map((item, idx) => (
-                            // TODO: Change to react router nav link
-                            <NavLink
-                                href={item.link}
-                                initial={{ y: -150, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{
-                                    delay: 0.6,
-                                    duration: 0.7,
-                                    type: "spring",
-                                    stiffness: 200,
-                                }}
-                                key={idx}
-                            >
-                                {item.name}
-                            </NavLink>
+                        {pages.map((page, idx) => (
+                            <Link to={page.link} key={idx}>
+                                {page.name}
+                            </Link>
                         ))}
                         <IconButton
                             onClick={toggleTheme}
