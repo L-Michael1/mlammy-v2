@@ -6,21 +6,25 @@ export const ArchivePageContainer = styled.div`
 `;
 
 export const Memories = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 20px;
     padding-top: 200px;
+
     @media (max-width: 64em) {
-        width: 80%;
         padding-top: 150px;
+    }
+
+    @media (max-width: 56em) {
+        grid-template-columns: 250px 250px;
+    }
+
+    @media (max-width: 40em) {
+        grid-template-columns: 250px;
     }
 `;
 
-export const MemoryContainer = styled.div`
-    width: 200px;
-    padding: 10px;
-`;
+export const MemoryContainer = styled.div``;
 
 export const ImageContainer = styled.div``;
 
