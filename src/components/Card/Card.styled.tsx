@@ -45,12 +45,8 @@ export const ContentContainer = styled.div`
 export const FooterContainer = styled.div`
     border-top: ${({ theme }) => `1px solid ${theme.accent}`};
     padding-top: 1rem;
-    color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.primary};
     word-spacing: 1rem;
-
-    :hover {
-        color: ${({ theme }) => theme.accent};
-    }
 `;
 
 // Card
@@ -63,7 +59,7 @@ export const Container = styled(motion.div)`
 export const CardContainer = styled(motion.div)<CardContainerProps>`
     background-color: ${({ theme }) => theme.card};
     max-width: 85%;
-    width: ${({ width }) => `${width}%` ?? "100%"};
+    width: ${({ width }) => `${width}px` ?? "100px"};
     padding: 1rem;
     border-radius: 12px;
     box-shadow: ${({ theme }) => `2px 2px 5px 5px ${theme.shadow}`};

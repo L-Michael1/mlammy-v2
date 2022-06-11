@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
     display: flex;
@@ -9,16 +9,16 @@ export const Container = styled.div`
     padding-right: 12rem;
     padding-left: 12rem;
 
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
         padding-right: 6rem;
         padding-left: 6rem;
     }
 
-    @media(max-width: 600px){
+    @media (max-width: 600px) {
         padding-right: 3rem;
         padding-left: 3rem;
     }
-`
+`;
 
 export const Button = styled(motion.button)`
     font-size: 1.1rem;
@@ -28,4 +28,4 @@ export const Button = styled(motion.button)`
     border-color: transparent;
     border-radius: 8px;
     cursor: pointer;
-`
+`;
