@@ -20,19 +20,28 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
     const scrolled = useScroll();
     const navItems = [
         {
-            itemName: "about",
+            name: "about",
+            link: "/",
         },
         {
-            itemName: "experience",
+            name: "experience",
+            link: "experience",
         },
         {
-            itemName: "projects",
+            name: "projects",
+            link: "projects",
         },
         {
-            itemName: "skills",
+            name: "skills",
+            link: "skills",
         },
         {
-            itemName: "contact",
+            name: "contact",
+            link: "contact",
+        },
+        {
+            name: "archive",
+            link: "archive",
         },
     ];
 
@@ -58,6 +67,7 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                         {navItems.map((item, idx) => (
                             // TODO: Change to react router nav link
                             <NavLink
+                                href={item.link}
                                 initial={{ y: -150, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{
@@ -68,7 +78,7 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                                 }}
                                 key={idx}
                             >
-                                {item.itemName}
+                                {item.name}
                             </NavLink>
                         ))}
                         <IconButton
