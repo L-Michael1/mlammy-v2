@@ -55,7 +55,10 @@ const MobileNavbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                     )}
                 </IconButton>
             </NavContainer>
-            <MobileMenu style={{ display: isOpen ? "" : "none" }}>
+            <MobileMenu
+                style={{ display: isOpen ? "" : "none" }}
+                onClick={() => setIsOpen(false)}
+            >
                 <ul
                     style={{
                         listStyleType: "none",
