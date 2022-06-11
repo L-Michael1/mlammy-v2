@@ -10,6 +10,7 @@ export const Memories = styled.div`
     grid-template-columns: 250px 250px 250px;
     grid-gap: 20px;
     padding-top: 200px;
+    padding-bottom: 100px;
 
     @media (max-width: 64em) {
         padding-top: 150px;
