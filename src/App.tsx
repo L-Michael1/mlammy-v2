@@ -10,6 +10,7 @@ import GlobalStyle from "./components/Theme/globalStyles";
 import { AboutPage } from "./pages/About";
 import { ArchivePage } from "./pages/Archive";
 import { SkillsPage } from "./pages/Skills";
+import { ExperiencePage } from "./pages/Experience";
 
 const App: React.FC = () => {
     let localTheme = localStorage.getItem("theme") ?? "dark";
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
     return (
         <Router>
+            {/* TODO: useContext for theme and toggleTheme instead of drilling props to each page */}
             <ThemeProvider theme={theme === "light" ? light : dark}>
                 <GlobalStyle />
                 <Routes>
@@ -49,6 +51,15 @@ const App: React.FC = () => {
                         path="skills"
                         element={
                             <SkillsPage
+                                themeType={theme}
+                                toggleTheme={toggleTheme}
+                            />
+                        }
+                    />
+                    <Route
+                        path="experience"
+                        element={
+                            <ExperiencePage
                                 themeType={theme}
                                 toggleTheme={toggleTheme}
                             />
