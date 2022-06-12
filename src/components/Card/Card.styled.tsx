@@ -59,7 +59,7 @@ export const Container = styled(motion.div)`
 export const CardContainer = styled(motion.div)<CardContainerProps>`
     background-color: ${({ theme }) => theme.card};
     max-width: 85%;
-    width: ${({ width }) => `${width}px` ?? "100px"};
+    width: ${({ width }) => `${width}%` ?? "100%"};
     padding: 1rem;
     border-radius: 12px;
     box-shadow: ${({ theme }) => `2px 2px 5px 5px ${theme.shadow}`};
