@@ -12,7 +12,7 @@ export const ExperiencePageContainer = styled.div`
     }
 `;
 
-export const ExperienceContainer = styled.div`
+export const ExperiencesContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,31 +25,5 @@ export const ExperienceContainer = styled.div`
 
     @media (max-width: 48em) {
         width: 85%;
-    }
-`;
-
-export const ImageContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    max-width: 25%;
-    width: 100%;
-
-    @media (max-width: 1350px) {
-        display: none;
-    }
-`;
-
-export const Image = styled.img`
-    margin-top: 3rem;
-`;
-
-export const Heading = styled.h1`
-    font-size: 2.5rem;
-
-    &:before {
-        content: "< ";
-    }
-    &:after {
-        content: "  />";
     }
 `;
