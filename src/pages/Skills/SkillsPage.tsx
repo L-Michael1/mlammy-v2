@@ -21,7 +21,7 @@ const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         <SubHeading>Languages</SubHeading>
                         <CardsContainer>
                             {languages.map((language, idx) => (
-                                <Card width={66} key={idx}>
+                                <Card width={91} key={idx}>
                                     <img
                                         src={language.icon}
                                         height="90"
@@ -36,7 +36,7 @@ const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         <SubHeading>Technologies</SubHeading>
                         <CardsContainer>
                             {technologies.map((tech, idx) => (
-                                <Card width={66} key={idx}>
+                                <Card width={91} key={idx}>
                                     <img
                                         src={tech.icon}
                                         height="90"
@@ -51,7 +51,7 @@ const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         <SubHeading>Tools</SubHeading>
                         <CardsContainer>
                             {tools.map((tool, idx) => (
-                                <Card width={66} key={idx}>
+                                <Card width={91} key={idx}>
                                     <img
                                         src={tool.icon}
                                         height="90"

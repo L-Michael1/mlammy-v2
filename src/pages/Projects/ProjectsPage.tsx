@@ -15,9 +15,9 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
         <ProjectsPageContainer>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
             <ProjectContainer>
-                <Card width={650}>
+                <Card width={700}>
                     <CardHeader
-                        date="June 2022 - Present"
+                        date="Jun. 2022 - Present"
                         title="Aptitude"
                         avatar={<AiOutlineLink />}
                         avatarLink="https://google.ca"
@@ -51,22 +51,15 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                 </Card>
             </ProjectContainer>
             <ProjectContainer>
-                <Card width={650}>
+                <Card width={700}>
                     <CardHeader
-                        date="Dec 2021 - Jan 2022"
+                        date="Dec. 2021 - Jan. 2022"
                         title="mlammy"
                         avatar={<AiOutlineLink />}
-                        avatarLink="https://mlammy-v2.netlify.app"
+                        avatarLink="https://mlammy.netlify.app"
                     />
                     <CardContent>
                         <ul>
-                            {/* <li>
-                                Working as a full-stack developer in a team of 3
-                                to develop a social media platform catered
-                                towards the fitness community - one where people
-                                can track progress, share progress, and join
-                                exclusive communities to access private workouts
-                            </li> */}
                             <li>
                                 Developed a responsive and robust single page
                                 web-based portfolio to showcase personal work
@@ -83,92 +76,59 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                 </Card>
             </ProjectContainer>
             <ProjectContainer>
-                <Card width={650}>
+                <Card width={700}>
                     <CardHeader
-                        date="June 2022 - Present"
-                        title="Aptitude"
+                        date="May 2021 - May 2021"
+                        title="Ukiyo"
                         avatar={<AiOutlineLink />}
-                        avatarLink="https://google.ca"
+                        avatarLink="https://github.com/L-Michael1/Ukiyo"
                     />
                     <CardContent>
                         <ul>
                             <li>
-                                Developed the API for Tulip iDevices for the
-                                Adyen Payment API integration feature using PHP,
-                                maintained with unit tests written in Python
+                                Developed a web-app in React that allows users
+                                to create, view, and share food recipes
                             </li>
                             <li>
-                                Developed and assisted in designing the database
-                                structures for Tulip iDevices using MySQL
+                                Implemented a RESTful architectural back end in
+                                Express that supports CRUD functionality
+                                connected to a MongoDB database
                             </li>
                             <li>
-                                Optimized various MySQL queries and reduced the
-                                time complexity of multiple functions to improve
-                                the performance of the Assisted Selling
-                                application
-                            </li>
-                            <li>
-                                Cleaned up numerous functions to reduce errors
-                                and warnings in GCP logs for a major API
-                                container by ~90%
-                            </li>
-                            <li>
-                                Used Postman to test APIs. and used VSTS to
-                                manage and organize tickets
-                            </li>
-                            <li>
-                                Assisted in the onboarding process of new
-                                members to the Checkout Team
+                                Utilized Material UI and Styled Components to
+                                create an intricate UX and responsive UI
                             </li>
                         </ul>
                     </CardContent>
                     <CardFooter>
-                        PHP MySQL Python Golang Docker APIs Optimization{" "}
+                        React MongoDB Express Material UI Styled-Components{" "}
                     </CardFooter>
                 </Card>
             </ProjectContainer>
             <ProjectContainer>
-                <Card width={650}>
+                <Card width={700}>
                     <CardHeader
-                        date="June 2022 - Present"
-                        title="Aptitude"
+                        date="Mar. 2020 - Jul. 2020"
+                        title="mBot"
                         avatar={<AiOutlineLink />}
-                        avatarLink="https://google.ca"
+                        avatarLink="https://github.com/L-Michael1/m-bot"
                     />
                     <CardContent>
                         <ul>
                             <li>
-                                Developed the API for Tulip iDevices for the
-                                Adyen Payment API integration feature using PHP,
-                                maintained with unit tests written in Python
+                                Developed a Discord bot using JavaScript, Node,
+                                and the DiscordJS API, hosted using Heroku
                             </li>
                             <li>
-                                Developed and assisted in designing the database
-                                structures for Tulip iDevices using MySQL
-                            </li>
-                            <li>
-                                Optimized various MySQL queries and reduced the
-                                time complexity of multiple functions to improve
-                                the performance of the Assisted Selling
-                                application
-                            </li>
-                            <li>
-                                Cleaned up numerous functions to reduce errors
-                                and warnings in GCP logs for a major API
-                                container by ~90%
-                            </li>
-                            <li>
-                                Used Postman to test APIs. and used VSTS to
-                                manage and organize tickets
-                            </li>
-                            <li>
-                                Assisted in the onboarding process of new
-                                members to the Checkout Team
+                                Improved personal user and moderator experience
+                                on multiple servers by implementing convenient
+                                moderation, server commands, games, and an
+                                economy system
                             </li>
                         </ul>
                     </CardContent>
                     <CardFooter>
-                        PHP MySQL Python Golang Docker APIs Optimization{" "}
+                        JavaScript Node DiscordJS MongoDB Heroku{" "}
                     </CardFooter>
                 </Card>
             </ProjectContainer>

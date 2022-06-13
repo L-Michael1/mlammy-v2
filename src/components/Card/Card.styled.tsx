@@ -63,7 +63,7 @@ export const CardContainer = styled(motion.div)<CardContainerProps>`
     border-radius: 12px;
     box-shadow: ${({ theme }) => `2px 2px 5px 5px ${theme.shadow}`};
 
-    @media (max-width: 64em) {
+    /* @media (max-width: 64em) {
         width: ${({ width }) => `${width * 0.9}px` ?? "100px"};
     }
 
@@ -77,5 +77,5 @@ export const CardContainer = styled(motion.div)<CardContainerProps>`
 
     @media (max-width: 24em) {
         width: ${({ width }) => `${width * 0.35}px` ?? "100px"};
-    }
+    } */
 `;
