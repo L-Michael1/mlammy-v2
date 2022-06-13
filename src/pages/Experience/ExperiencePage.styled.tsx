@@ -6,10 +6,12 @@ export const ExperiencePageContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 16rem;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
 
     @media (max-width: 64em) {
-        margin-top: 8rem;
+        padding-top: 8rem;
+        padding-bottom: 6rem;
     }
 `;
 
