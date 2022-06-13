@@ -5,10 +5,12 @@ export const ProjectsPageContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 16rem;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
 
     @media (max-width: 64em) {
-        margin-top: 8rem;
+        padding-top: 8rem;
+        padding-bottom: 6rem;
     }
 `;
 
