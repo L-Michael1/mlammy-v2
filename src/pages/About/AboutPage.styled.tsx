@@ -5,19 +5,19 @@ export const AboutPageContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 16rem 6.5rem 0rem 6.5rem;
+    padding: 16rem 6.5rem 0rem 6.5rem;
+
+    @media (max-width: 80em) {
+        padding: 12rem 6.5rem 0rem 6.5rem;
+    }
 
     @media (max-width: 64em) {
         flex-direction: column;
-        margin: 10rem 4rem 0rem 4rem;
+        padding: 8rem 4rem 2rem 4rem;
     }
 `;
 
-export const HeaderContainer = styled.div`
-    @media (max-width: 64em) {
-        margin-bottom: 4rem;
-    }
-`;
+export const HeaderContainer = styled.div``;
 
 export const Header = styled.h1`
     transform: rotate(270deg);
