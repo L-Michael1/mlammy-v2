@@ -3,19 +3,21 @@ import { Navbar } from "../../components/Navbar";
 import { PageProps } from "../../types/common.types";
 import { languages, technologies, tools } from "./SkillsConstants";
 import {
-    Container,
+    SkillsPageContainer,
     SubHeading,
     SplitContainer,
     SkillsContainer,
     CardsContainer,
 } from "./SkillsPage.styled";
 import { Card, CardFooter } from "../../components/Card/Card";
+import { Container } from "../../global.styled";
+import { Footer } from "../../components/Footer";
 
 const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
-        <div>
+        <Container>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
-            <Container>
+            <SkillsPageContainer>
                 <SplitContainer>
                     <SkillsContainer>
                         <SubHeading>Languages</SubHeading>
@@ -63,8 +65,9 @@ const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         </CardsContainer>
                     </SkillsContainer>
                 </SplitContainer>
-            </Container>
-        </div>
+            </SkillsPageContainer>
+            <Footer />
+        </Container>
     );
 };
 
