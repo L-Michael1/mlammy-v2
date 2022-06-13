@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     * {
         margin: 0;
         font-family: 'Karla', sans-serif;
-        transition: all 0.2s linear;
+        transition: all 0.15s linear;
         scroll-behavior: smooth;
     }
 

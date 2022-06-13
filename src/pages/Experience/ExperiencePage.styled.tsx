@@ -2,28 +2,36 @@ import styled from "styled-components";
 
 export const ExperiencePageContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 16rem;
 
     @media (max-width: 64em) {
-        margin-top: 12rem;
+        margin-top: 8rem;
     }
 `;
 
-export const ExperiencesContainer = styled.div`
+export const ExperienceContainer = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 65%;
+    padding-bottom: 30px;
 
     @media (max-width: 64em) {
-        width: 75%;
+        width: 650px;
     }
 
     @media (max-width: 48em) {
-        width: 85%;
+        width: 450px;
+    }
+
+    @media (max-width: 32em) {
+        width: 350px;
+    }
+
+    @media (max-width: 24em) {
+        width: 300px;
     }
 `;
