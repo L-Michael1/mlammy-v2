@@ -9,28 +9,33 @@ import {
     DetailsContainer,
 } from "./ArchivePage.styled";
 import { memories } from "./ArchiveConstants";
+import { Container } from "../../global.styled";
+import { Footer } from "../../components/Footer";
 
 const ArchivePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
-        <ArchivePageContainer>
-            <Navbar themeType={themeType} toggleTheme={toggleTheme} />
-            <Memories>
-                {memories.map((memory) => {
-                    return (
-                        <MemoryContainer>
-                            <ImageContainer>
-                                <img src={memory.source} width={250} />
-                            </ImageContainer>
-                            <DetailsContainer>
-                                <span>{memory.caption}</span>
-                                <span>{memory.date}</span>
-                                <span>{memory.location}</span>
-                            </DetailsContainer>
-                        </MemoryContainer>
-                    );
-                })}
-            </Memories>
-        </ArchivePageContainer>
+        <Container>
+            <ArchivePageContainer>
+                <Navbar themeType={themeType} toggleTheme={toggleTheme} />
+                <Memories>
+                    {memories.map((memory) => {
+                        return (
+                            <MemoryContainer>
+                                <ImageContainer>
+                                    <img src={memory.source} width={250} />
+                                </ImageContainer>
+                                <DetailsContainer>
+                                    <span>{memory.caption}</span>
+                                    <span>{memory.date}</span>
+                                    <span>{memory.location}</span>
+                                </DetailsContainer>
+                            </MemoryContainer>
+                        );
+                    })}
+                </Memories>
+            </ArchivePageContainer>
+            <Footer />
+        </Container>
     );
 };
 
