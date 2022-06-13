@@ -1,14 +1,18 @@
-import Contact from "../Contact/Contact";
+import { Contact } from "../Contact";
 import { Container, ContactContainer } from "./Footer.styled";
 
-const Footer = () => {
+type FooterProps = {
+    themeType: string;
+};
+
+const Footer: React.FC<FooterProps> = ({ themeType }) => {
     return (
         <Container>
             <div>
                 <span>© 2022 Michael Lam. All Rights Reserved</span>
             </div>
             <ContactContainer>
-                <Contact themeType={"light"} />
+                <Contact themeType={themeType} />
             </ContactContainer>
         </Container>
     );

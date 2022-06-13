@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const SkillsPageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 8rem;
-    margin-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
 
     @media (max-width: 64em) {
-        margin-top: 4rem;
+        padding-top: 3rem;
     }
 
     @media (max-width: 32rem) {
-        margin-top: 2rem;
+        padding-top: 2rem;
     }
 `;
 

@@ -8,16 +8,20 @@ export const AboutPageContainer = styled.div`
     padding: 16rem 6.5rem 0rem 6.5rem;
 
     @media (max-width: 80em) {
-        padding: 12rem 6.5rem 0rem 6.5rem;
+        padding: 12rem 6.5rem 4rem 6.5rem;
     }
 
     @media (max-width: 64em) {
         flex-direction: column;
-        padding: 8rem 4rem 2rem 4rem;
+        padding: 8rem 4rem 6rem 4rem;
     }
 `;
 
-export const HeaderContainer = styled.div``;
+export const HeaderContainer = styled.div`
+    @media (max-width: 64em) {
+        padding-bottom: 2rem;
+    }
+`;
 
 export const Header = styled.h1`
     transform: rotate(270deg);

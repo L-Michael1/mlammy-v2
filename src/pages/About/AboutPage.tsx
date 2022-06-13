@@ -45,7 +45,7 @@ const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                     <Image src={greyscale_michael} />
                 </ImageWrapper>
             </AboutPageContainer>
-            <Footer />
+            <Footer themeType={themeType} />
         </Container>
     );
 };
