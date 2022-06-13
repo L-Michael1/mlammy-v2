@@ -9,16 +9,53 @@ import {
 } from "../../components/Card/Card";
 import {
     ExperiencePageContainer,
-    ExperiencesContainer,
+    ExperienceContainer,
 } from "./ExperiencePage.styled";
 import tulip from "../../assets/tulip.png";
+import muscle from "../../assets/muscle.png";
 
 const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
         <ExperiencePageContainer>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
-            <ExperiencesContainer>
-                <Card width={80}>
+            <ExperienceContainer>
+                <Card width={700}>
+                    <CardHeader
+                        date="Jun. 2022 - Present"
+                        title="Aptitude"
+                        avatar={<img src={muscle} height={25} />}
+                        avatarLink="https://google.ca"
+                    />
+                    <CardContent>
+                        <ul>
+                            <li>
+                                Working as a full-stack developer in a team of 3
+                                to develop a social media platform catered
+                                towards the fitness community - one where people
+                                can track progress, share progress, and join
+                                exclusive communities to access private workouts
+                            </li>
+                            <li>
+                                Implemented the authentication and authorization
+                                microservice using JWTs written in Golang
+                            </li>
+                            <li>
+                                Created various re-usable components in
+                                React-Native and numerous screens
+                            </li>
+                            <li>
+                                Assisted in creating queries and mutations of
+                                the main API written in GraphQL
+                            </li>
+                        </ul>
+                    </CardContent>
+                    <CardFooter>
+                        React-Native Golang PostgreSQL GraphQL Docker{" "}
+                    </CardFooter>
+                </Card>
+            </ExperienceContainer>
+            <ExperienceContainer>
+                <Card width={700}>
                     <CardHeader
                         date="Sep 2021 - Dec 2021"
                         title="Tulip - Software Developer Intern"
@@ -61,7 +98,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         PHP MySQL Python Golang Docker APIs Optimization{" "}
                     </CardFooter>
                 </Card>
-            </ExperiencesContainer>
+            </ExperienceContainer>
         </ExperiencePageContainer>
     );
 };

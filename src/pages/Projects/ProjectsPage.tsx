@@ -40,8 +40,8 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                                 React-Native and numerous screens
                             </li>
                             <li>
-                                Assisted in creating multiple queries and
-                                mutations of the main API written in GraphQL
+                                Assisted in creating queries and mutations of
+                                the main API written in GraphQL
                             </li>
                         </ul>
                     </CardContent>
