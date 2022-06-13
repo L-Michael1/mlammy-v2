@@ -45,7 +45,7 @@ export const CardHeader = ({
 export const CardContent = ({ children }: any) => {
     return (
         <ContentContainer>
-            <p>{children}</p>
+            <span>{children}</span>
         </ContentContainer>
     );
 };
