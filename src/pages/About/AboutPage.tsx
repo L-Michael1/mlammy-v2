@@ -11,11 +11,13 @@ import {
     Header,
     Highlight,
 } from "./AboutPage.styled";
+import { Container } from "../../global.styled";
+import { Footer } from "../../components/Footer";
 import { PageProps } from "../../types/common.types";
 
 const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
-        <div>
+        <Container>
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
             <AboutPageContainer>
                 <HeaderContainer>
@@ -43,7 +45,8 @@ const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                     <Image src={greyscale_michael} />
                 </ImageWrapper>
             </AboutPageContainer>
-        </div>
+            <Footer />
+        </Container>
     );
 };
 

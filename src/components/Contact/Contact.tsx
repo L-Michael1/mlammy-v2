@@ -15,19 +15,19 @@ const Contact = ({ themeType }: ContactProps) => {
     const contacts = [
         {
             link: "https://github.com/L-Michael1",
-            icon: <GoMarkGithub color={color} size="2rem" />,
+            icon: <GoMarkGithub color={color} size="1rem" />,
         },
         {
             link: "https://www.linkedin.com/in/mlam977/",
-            icon: <FaLinkedin color={color} size="2rem" />,
+            icon: <FaLinkedin color={color} size="1rem" />,
         },
         {
             link: "mailto:m.lam08@outlook.com",
-            icon: <MdEmail color={color} size="2rem" />,
+            icon: <MdEmail color={color} size="1rem" />,
         },
         {
             link: Resume,
-            icon: <RiFilePaper2Fill color={color} size="2rem" />,
+            icon: <RiFilePaper2Fill color={color} size="1rem" />,
         },
     ];
 
