@@ -58,9 +58,24 @@ export const Container = styled(motion.div)`
 
 export const CardContainer = styled(motion.div)<CardContainerProps>`
     background-color: ${({ theme }) => theme.card};
-    max-width: 85%;
-    width: ${({ width }) => `${width}%` ?? "100%"};
+    width: ${({ width }) => `${width}px` ?? "100px"};
     padding: 1rem;
     border-radius: 12px;
     box-shadow: ${({ theme }) => `2px 2px 5px 5px ${theme.shadow}`};
+
+    /* @media (max-width: 64em) {
+        width: ${({ width }) => `${width * 0.9}px` ?? "100px"};
+    }
+
+    @media (max-width: 48em) {
+        width: ${({ width }) => `${width * 0.7}px` ?? "100px"};
+    }
+
+    @media (max-width: 32em) {
+        width: ${({ width }) => `${width * 0.5}px` ?? "100px"};
+    }
+
+    @media (max-width: 24em) {
+        width: ${({ width }) => `${width * 0.35}px` ?? "100px"};
+    } */
 `;

@@ -11,6 +11,7 @@ import { AboutPage } from "./pages/About";
 import { ArchivePage } from "./pages/Archive";
 import { SkillsPage } from "./pages/Skills";
 import { ExperiencePage } from "./pages/Experience";
+import { ProjectsPage } from "./pages/Projects";
 
 const App: React.FC = () => {
     let localTheme = localStorage.getItem("theme") ?? "dark";
@@ -60,6 +61,15 @@ const App: React.FC = () => {
                         path="experience"
                         element={
                             <ExperiencePage
+                                themeType={theme}
+                                toggleTheme={toggleTheme}
+                            />
+                        }
+                    />
+                    <Route
+                        path="projects"
+                        element={
+                            <ProjectsPage
                                 themeType={theme}
                                 toggleTheme={toggleTheme}
                             />
