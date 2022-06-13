@@ -106,7 +106,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         </CardFooter>
                     </Card>
                 </ExperienceContainer>
-                <Footer />
+                <Footer themeType={themeType} />
             </ExperiencePageContainer>
         </Container>
     );

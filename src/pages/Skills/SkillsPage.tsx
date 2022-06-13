@@ -66,7 +66,7 @@ const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                     </SkillsContainer>
                 </SplitContainer>
             </SkillsPageContainer>
-            <Footer />
+            <Footer themeType={themeType} />
         </Container>
     );
 };

@@ -142,7 +142,7 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                     </Card>
                 </ProjectContainer>
             </ProjectsPageContainer>
-            <Footer />
+            <Footer themeType={themeType} />
         </Container>
     );
 };

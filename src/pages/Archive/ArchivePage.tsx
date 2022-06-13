@@ -34,7 +34,7 @@ const ArchivePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                     })}
                 </Memories>
             </ArchivePageContainer>
-            <Footer />
+            <Footer themeType={themeType} />
         </Container>
     );
 };
