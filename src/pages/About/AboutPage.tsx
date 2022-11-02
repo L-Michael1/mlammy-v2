@@ -14,10 +14,15 @@ import {
 import { Container } from "../../global.styled";
 import { Footer } from "../../components/Footer";
 import { PageProps } from "../../types/common.types";
+import { motion } from "framer-motion";
 
 const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
-        <Container>
+        <Container
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+        >
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
             <AboutPageContainer>
                 <HeaderContainer>

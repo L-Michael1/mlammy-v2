@@ -31,7 +31,7 @@ export const Title = styled.h3`
 `;
 
 export const Date = styled.span`
-    color: ${({ theme }) => theme.accent};
+    color: ${({ theme }) => theme.primary};
     font-size: 14px;
 `;
 
@@ -40,6 +40,10 @@ export const ContentContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
 `;
+
+export const Content = styled.span`
+    color: ${({ theme }) => theme.primary};
+`
 
 // CardFooter
 export const FooterContainer = styled.div`
@@ -56,26 +60,10 @@ export const Container = styled(motion.div)`
     align-items: center;
 `;
 
-export const CardContainer = styled(motion.div)<CardContainerProps>`
+export const CardContainer = styled(motion.div) <CardContainerProps>`
     background-color: ${({ theme }) => theme.card};
     width: ${({ width }) => `${width}px` ?? "100px"};
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: ${({ theme }) => `2px 2px 5px 5px ${theme.shadow}`};
-
-    /* @media (max-width: 64em) {
-        width: ${({ width }) => `${width * 0.9}px` ?? "100px"};
-    }
-
-    @media (max-width: 48em) {
-        width: ${({ width }) => `${width * 0.7}px` ?? "100px"};
-    }
-
-    @media (max-width: 32em) {
-        width: ${({ width }) => `${width * 0.5}px` ?? "100px"};
-    }
-
-    @media (max-width: 24em) {
-        width: ${({ width }) => `${width * 0.35}px` ?? "100px"};
-    } */
+    box-shadow: ${({ theme }) => `1px 1px 2px 2px ${theme.shadow}`};
 `;

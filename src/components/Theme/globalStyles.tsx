@@ -10,14 +10,13 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
 
     * {
         margin: 0;
-        font-family: 'Karla', sans-serif;
-        transition: all 0.15s linear;
+        font-family: 'Inter', sans-serif;
         scroll-behavior: smooth;
+        transition: all 0.3s linear;
     }
 
     body {
         background: ${({ theme }) => theme.background};
-        color: ${({ theme }) => theme.primary};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -29,8 +28,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     h1,
     h2,
     h3 {
-        color: ${({ theme }) => theme.primary};
-        font-family: 'Arimo', sans-serif;
+        font-family: 'Inter', sans-serif;
         text-transform: uppercase;
     }
 

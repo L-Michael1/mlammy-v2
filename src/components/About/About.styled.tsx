@@ -51,6 +51,7 @@ export const SkillsContainer = styled.div`
 
 export const Heading = styled.h1`
     font-size: 2.5rem;
+    color: ${({ theme }) => theme.primary};
 
     &:before {
         content: '< ';
@@ -67,5 +68,5 @@ export const Text = styled.p`
 
 export const Link = styled(motion.a)`
     text-decoration: none;
-    color: ${({ theme }) => theme.accent}
+    color: ${({ theme }) => theme.primary}
 `

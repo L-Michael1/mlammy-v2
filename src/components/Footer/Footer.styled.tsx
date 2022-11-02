@@ -9,11 +9,17 @@ export const Container = styled.div`
     bottom: 0;
     height: 2.5rem;
     width: 100%;
+    margin-block: 1rem;
 
     @media (max-width: 64em) {
         flex-direction: column;
     }
 `;
+
+export const FooterContent = styled.p`
+    color: ${({ theme }) => theme.primary};
+    font-weight: 100;
+`
 
 export const ContactContainer = styled.div`
     padding-top: 5px;

@@ -26,6 +26,7 @@ export const HeaderContainer = styled.div`
 export const Header = styled.h1`
     transform: rotate(270deg);
     font-size: 2.5rem;
+    color: ${({ theme }) => theme.primary};
 
     @media (max-width: 64em) {
         font-size: 2rem;
@@ -43,6 +44,7 @@ export const DescriptionContainer = styled.div`
 
 export const Description = styled.span`
     display: inline;
+    color: ${({ theme }) => theme.primary};
 `;
 
 export const Highlight = styled.span`

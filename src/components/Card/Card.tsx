@@ -8,6 +8,7 @@ import {
     Link,
     Title,
     Date,
+    Content,
 } from "./Card.styled";
 
 type CardHeaderProps = {
@@ -45,7 +46,7 @@ export const CardHeader = ({
 export const CardContent = ({ children }: any) => {
     return (
         <ContentContainer>
-            <span>{children}</span>
+            <Content>{children}</Content>
         </ContentContainer>
     );
 };
