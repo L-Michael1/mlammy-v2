@@ -17,7 +17,7 @@ export const Container = styled.div<ContainerProps>`
     z-index: 1;
     width: 100%;
     box-shadow: ${({ theme, scrolled }) =>
-        scrolled ? `0 2px 4px ${theme.shadow}` : "0px"};
+        scrolled ? `0 2px 3px ${theme.shadow}` : "0px"};
 
     @media (max-width: 64em) {
         flex-direction: row;
@@ -26,15 +26,19 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export const NavContainer = styled.div`
-    font-size: 18px;
+    font-size: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 85%;
+    max-width: 70%;
     width: 100%;
     margin: auto;
     padding: 1rem;
+
+    @media (max-width: 64rem) {
+        max-width: 85%;
+    }
 `;
 
 export const HeaderContainer = styled.div`
@@ -42,13 +46,14 @@ export const HeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    padding-bottom: 1rem;
 `;
 
 export const Heading = styled(motion.span)`
-    font-size: 2.5rem;
-    font-weight: 900;
+    font-size: 2.25rem;
+    font-weight: 800;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.accent};
 
     @media (max-width: 64em) {
         font-size: 1.5rem;
@@ -70,6 +75,7 @@ export const NavLink = styled(motion.a)`
 `;
 
 export const HamburgerContainer = styled.div`
+    color: ${({ theme }) => theme.primary};
     z-index: 999;
 `;
 

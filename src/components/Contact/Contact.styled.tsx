@@ -7,4 +7,5 @@ export const Container = styled(motion.div)`
     gap: 1rem;
 `;
 
-export const IconWrapper = styled(motion.div)``;
+export const IconWrapper = styled(motion.div)`
+`;

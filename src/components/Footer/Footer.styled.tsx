@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const FooterContent = styled.p`
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.feint};
     font-weight: 100;
 `
 

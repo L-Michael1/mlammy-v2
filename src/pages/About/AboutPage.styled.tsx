@@ -2,29 +2,37 @@ import styled from "styled-components";
 
 export const AboutPageContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16rem 6.5rem 0rem 6.5rem;
+    max-width: 70%;
+    width: 100%;
+    margin: auto;
+    padding: 17rem 16rem 0rem 16rem;
 
     @media (max-width: 80em) {
-        padding: 12rem 6.5rem 4rem 6.5rem;
+        padding: 15rem 6.5rem 4rem 6.5rem;
     }
 
     @media (max-width: 64em) {
         flex-direction: column;
-        padding: 8rem 4rem 6rem 4rem;
+        padding: 9rem 4rem 6rem 4rem;
     }
 `;
 
 export const HeaderContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    padding-bottom: 2rem;
     @media (max-width: 64em) {
         padding-bottom: 2rem;
     }
 `;
 
 export const Header = styled.h1`
-    transform: rotate(270deg);
     font-size: 2.5rem;
     color: ${({ theme }) => theme.primary};
 
@@ -34,34 +42,50 @@ export const Header = styled.h1`
     }
 `;
 
-export const DescriptionContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    padding-left: 8%;
-    padding-right: 8%;
-`;
+export const SubHeader = styled.h1`
+    font-size: 2.5rem;
+    color: ${({ theme }) => theme.accent};
 
-export const Description = styled.span`
-    display: inline;
-    color: ${({ theme }) => theme.primary};
-`;
-
-export const Highlight = styled.span`
-    color: ${({ theme }) => theme.primary};
-    font-weight: 800;
-`;
-
-export const ImageWrapper = styled.div`
-    padding-right: 3%;
     @media (max-width: 64em) {
-        display: none;
+        font-size: 2rem;
+        transform: none;
     }
 `;
 
-export const Image = styled.img`
+export const DescriptionContainer = styled.div`
+    display: flex;
     width: 100%;
-    min-width: 175px;
-    max-width: 300px;
-    height: auto;
+
+    @media (max-width: 64em) {
+        flex-direction: column;
+    }
 `;
+
+export const DescriptionHeader = styled.h1`
+    font-size: 2rem;
+    font-weight: 800;
+    color: ${({ theme }) => theme.primary};
+    text-transform: none;
+    padding-bottom: 1rem;
+`
+
+export const Description = styled.div`
+    color: ${({ theme }) => theme.feint};
+    padding-right: 4rem;
+    width: 100%;
+
+    @media (max-width: 64em) {
+        padding-bottom: 2rem;
+    }
+`;
+
+export const Highlight = styled.span`
+    color: ${({ theme }) => theme.accent};
+    font-weight: 800;
+`;
+
+export const Link = styled.a`
+    font-weight: 600;
+    color: ${({ theme }) => theme.accent};
+    text-decoration: none;
+`
