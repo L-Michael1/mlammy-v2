@@ -15,7 +15,11 @@ import { Footer } from "../../components/Footer";
 
 const SkillsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
-        <Container>
+        <Container
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+        >
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
             <SkillsPageContainer>
                 <SplitContainer>

@@ -18,7 +18,11 @@ import { Container } from "../../global.styled";
 
 const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
     return (
-        <Container>
+        <Container
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+        >
             <ExperiencePageContainer>
                 <Navbar themeType={themeType} toggleTheme={toggleTheme} />
                 <ExperienceContainer>

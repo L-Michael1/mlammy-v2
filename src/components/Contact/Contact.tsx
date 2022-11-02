@@ -37,14 +37,6 @@ const Contact = ({ themeType }: ContactProps) => {
                 <motion.div key={idx} whileHover={{ scale: 1.1 }}>
                     <IconWrapper
                         key={idx}
-                        initial={{ y: -30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{
-                            delay: 0 + idx / 4,
-                            duration: 0.8,
-                            type: "spring",
-                            stiffness: 50,
-                        }}
                     >
                         <a href={contact.link} target="_blank" rel="noreferrer">
                             {contact.icon}

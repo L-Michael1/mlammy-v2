@@ -17,7 +17,7 @@ export const Container = styled.div<ContainerProps>`
     z-index: 1;
     width: 100%;
     box-shadow: ${({ theme, scrolled }) =>
-        scrolled ? `0 2px 8px ${theme.shadow}` : "0px"};
+        scrolled ? `0 2px 4px ${theme.shadow}` : "0px"};
 
     @media (max-width: 64em) {
         flex-direction: row;
@@ -48,7 +48,7 @@ export const Heading = styled(motion.span)`
     font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.accent};
+    color: ${({ theme }) => theme.primary};
 
     @media (max-width: 64em) {
         font-size: 1.5rem;
@@ -107,6 +107,7 @@ export const Link = styled(Nav)`
     margin: 1rem;
     text-transform: uppercase;
     text-decoration: none;
+
     :hover {
         color: ${({ theme }) => theme.secondary};
     }
