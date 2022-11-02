@@ -30,7 +30,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         <CardHeader
                             date="Jun. 2022 - Present"
                             title="Aptitude"
-                            avatar={<img src={muscle} height={25} />}
+                            avatar={<img alt="muscle" src={muscle} height={25} />}
                             avatarLink="https://google.ca"
                         />
                         <CardContent>
@@ -68,7 +68,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         <CardHeader
                             date="Sep 2021 - Dec 2021"
                             title="Tulip - Software Developer Intern"
-                            avatar={<img src={tulip} height={25} />}
+                            avatar={<img alt="tulip" src={tulip} height={25} />}
                             avatarLink="https://tulip.com"
                         />
                         <CardContent>

@@ -14,7 +14,6 @@ import {
 import { Container } from "../../global.styled";
 import { Footer } from "../../components/Footer";
 import { PageProps } from "../../types/common.types";
-import { motion } from "framer-motion";
 import Resume from "../../assets/resume.pdf";
 
 const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
@@ -59,11 +58,6 @@ const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         <Link href="https://www.goodreads.com/user/show/137567565-michael" target="_blank">
                             Goodreads!
                         </Link>
-                        {/* <a style={{ textDecoration: "none" }} href="https://www.goodreads.com/user/show/137567565-michael" target="_blank">
-                            <Highlight>
-                            </Highlight>
-                        </a> */}
-
                     </Description>
                 </DescriptionContainer>
             </AboutPageContainer>

@@ -26,7 +26,7 @@ const ArchivePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                         return (
                             <MemoryContainer>
                                 <ImageContainer>
-                                    <img src={memory.source} width={250} />
+                                    <img alt={memory.alt} src={memory.source} width={250} />
                                 </ImageContainer>
                                 <DetailsContainer>
                                     <span>{memory.caption}</span>
