@@ -26,7 +26,7 @@ const Navbar: React.FC<NavProps> = ({ themeType, toggleTheme }) => {
                 <>
                     <HeaderContainer>
                         <Heading>
-                            Michael Lam
+                            M.L
                         </Heading>
                     </HeaderContainer>
                     <NavContainer>
