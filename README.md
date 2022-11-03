@@ -1,4 +1,4 @@
-# mlammy-v2 👽
+# mlammy 👽
 
 Personal portfolio
 
