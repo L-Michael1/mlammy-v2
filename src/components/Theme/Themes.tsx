@@ -1,16 +1,16 @@
 export const light = {
-    background: '#ffffff',
-    primary: '#000000',
-    secondary: '#6B7280',
-    accent: '#8aa9ff',
-    card: '#ffffff',
-    shadow: '#98A8BC33',
-}
+    background: "#ffffff",
+    primary: "#000000",
+    secondary: "#d9dbe1",
+    shadow: "#7e8b9b33",
+    accent: "#009cda",
+    feint: "#8A8A8A"
+};
 export const dark = {
-    background: '#152847',
-    primary: '#d1d9f1',
-    secondary: '#8A93AD',
-    accent: '#a4f8e0',
-    card: '#1a2d50',
-    shadow: '#091427',
-}
+    background: "#1f1f1f",
+    primary: "#ffffff",
+    secondary: "#2b2e36",
+    shadow: "#cecece",
+    accent: "#009cda",
+    feint: "#8A8A8A"
+};

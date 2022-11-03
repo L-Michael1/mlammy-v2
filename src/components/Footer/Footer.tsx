@@ -1,26 +1,19 @@
-import { Container, Button } from './Footer.styled'
+import { Contact } from "../Contact";
+import { Container, ContactContainer, FooterContent } from "./Footer.styled";
 
-const Footer = () => {
+type FooterProps = {
+    themeType: string;
+};
 
-    const handleScroll = () => {
-        window.scrollTo({
-            top: 0
-        })
-    }
-
+const Footer: React.FC<FooterProps> = ({ themeType }) => {
     return (
         <Container>
-            <span>© 2022 Michael Lam. All Rights Reserved</span>
-            <Button
-                whileHover={{ scale: 1.025 }}
-                whileTap={{ scale: 0.975 }}
-                transition={{ duration: 0.1 }}
-                onClick={handleScroll}
-            >
-                Scroll to top
-            </Button>
+            <FooterContent>© 2022 Michael Lam. All Rights Reserved</FooterContent>
+            <ContactContainer>
+                <Contact themeType={themeType} />
+            </ContactContainer>
         </Container>
-    )
-}
+    );
+};
 
 export default Footer;

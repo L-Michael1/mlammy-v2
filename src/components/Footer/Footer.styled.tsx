@@ -1,31 +1,32 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    padding-right: 12rem;
-    padding-left: 12rem;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    margin-block: 1rem;
 
-    @media(max-width: 900px){
-        padding-right: 6rem;
-        padding-left: 6rem;
+    @media (max-width: 64em) {
+        flex-direction: column;
     }
+`;
 
-    @media(max-width: 600px){
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
+export const FooterContent = styled.p`
+    color: ${({ theme }) => theme.feint};
+    font-weight: 100;
 `
 
-export const Button = styled(motion.button)`
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: ${({ theme }) => theme.background};
-    background-color: ${({ theme }) => theme.accent};
-    border-color: transparent;
-    border-radius: 8px;
-    cursor: pointer;
-`
+export const ContactContainer = styled.div`
+    padding-top: 5px;
+    padding-left: 1rem;
+
+    @media (max-width: 64em) {
+        padding-left: 0;
+        padding: 1rem;
+    }
+`;
