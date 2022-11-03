@@ -37,3 +37,7 @@ export const ExperienceContainer = styled.div`
         width: 300px;
     }
 `;
+
+export const List = styled.ul`
+    list-style-type: circle;
+`;

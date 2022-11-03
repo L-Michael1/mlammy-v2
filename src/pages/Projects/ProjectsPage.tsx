@@ -7,7 +7,7 @@ import {
     CardContent,
     CardFooter,
 } from "../../components/Card/Card";
-import { ProjectContainer, ProjectsPageContainer } from "./ProjectsPage.styled";
+import { ProjectContainer, ProjectsPageContainer, List} from "./ProjectsPage.styled";
 import { AiOutlineLink } from "react-icons/ai";
 import { Container } from "../../global.styled";
 import { Footer } from "../../components/Footer";
@@ -24,65 +24,56 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                 <ProjectContainer>
                     <Card width={700}>
                         <CardHeader
-                            date="Jun. 2022 - Present"
-                            title="Aptitude"
+                            date="Nov. 2022 - Present"
+                            title="Kaizen"
                             avatar={<AiOutlineLink />}
                             avatarLink="https://google.ca"
                         />
                         <CardContent>
-                            <ul>
+                            <List>
                                 <li>
-                                    Working as a full-stack developer in a team
-                                    of 3 to develop a social media platform
-                                    catered towards the fitness community - one
-                                    where people can track progress, share
-                                    progress, and join exclusive communities to
-                                    access private workouts
+                                    In the works of developing a mental health focused productivity web-app 
+                                    that allows users to create personal to-dos, habits, and journal entries 
                                 </li>
                                 <li>
-                                    Implemented the authentication and
-                                    authorization microservice using JWTs
-                                    written in Golang
+                                    Designed the UI in Figma...tbd
                                 </li>
                                 <li>
-                                    Created various re-usable components in
-                                    React-Native and numerous screens
+                                    Developed an automated test suite using...tbd
                                 </li>
-                                <li>
-                                    Assisted in creating queries and mutations
-                                    of the main API written in GraphQL
-                                </li>
-                            </ul>
+                            </List>
                         </CardContent>
                         <CardFooter>
-                            React-Native Golang PostgreSQL GraphQL Docker{" "}
+                            React TypeScript Firebase PostgreSQL CircleCI Styled-components{" "}
                         </CardFooter>
                     </Card>
                 </ProjectContainer>
                 <ProjectContainer>
                     <Card width={700}>
                         <CardHeader
-                            date="Dec. 2021 - Jan. 2022"
+                            date="Oct. 2022 - Nov. 2022"
                             title="mlammy"
                             avatar={<AiOutlineLink />}
                             avatarLink="https://mlammy.netlify.app"
                         />
                         <CardContent>
-                            <ul>
+                            <List>
                                 <li>
                                     Developed a responsive and robust single
                                     page web-based portfolio to showcase
                                     personal work and experience
                                 </li>
                                 <li>
-                                    Implemented Framer Motion joined with Styled
-                                    Components to create an intricate UX and
-                                    responsive UI
+                                    Created re-usable responsive styled-components 
+                                    to create an intricate UX and responsive UI
                                 </li>
-                            </ul>
+                                <li>
+                                    UI built to be desktop & mobile friendly
+                                </li>
+                            </List>
                         </CardContent>
                         <CardFooter>
-                            React TypeScript Styled-Components
+                            React TypeScript Styled-Components Netlify
                         </CardFooter>
                     </Card>
                 </ProjectContainer>
@@ -95,7 +86,7 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                             avatarLink="https://github.com/L-Michael1/Ukiyo"
                         />
                         <CardContent>
-                            <ul>
+                            <List>
                                 <li>
                                     Developed a web-app in React that allows
                                     users to create, view, and share food
@@ -110,7 +101,7 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                                     Utilized Material UI and Styled Components
                                     to create an intricate UX and responsive UI
                                 </li>
-                            </ul>
+                            </List>
                         </CardContent>
                         <CardFooter>
                             React MongoDB Express Material UI Styled-Components{" "}
@@ -126,7 +117,7 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                             avatarLink="https://github.com/L-Michael1/m-bot"
                         />
                         <CardContent>
-                            <ul>
+                            <List>
                                 <li>
                                     Developed a Discord bot using JavaScript,
                                     Node, and the DiscordJS API, hosted using
@@ -138,7 +129,7 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                                     implementing convenient moderation, server
                                     commands, games, and an economy system
                                 </li>
-                            </ul>
+                            </List>
                         </CardContent>
                         <CardFooter>
                             JavaScript Node DiscordJS MongoDB Heroku{" "}
