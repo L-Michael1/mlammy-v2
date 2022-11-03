@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
-import { NavLink as Nav } from "react-router-dom";
+import { Link as NaviLink } from "react-router-dom";
 
 type ContainerProps = {
     scrolled: boolean;
@@ -88,20 +88,33 @@ const fadeIn = keyframes`
     }
 `;
 
-export const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: ${({ theme }) => theme.primary};
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    opacity: 85%;
-    animation: ${fadeIn} 0.5s linear;
+const fadeOut = keyframes`
+    from {
+      opacity: 85%;
+    }
+    to {
+      opacity: 0%;
+    }
+`;
+
+export const MobileMenu = styled.div<{ isOpen: boolean }>`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  opacity: 90%;
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  animation: ${({ isOpen }) => (isOpen ? fadeIn : fadeOut)} 0.5s linear;
+  transition: visibility 0.5s linear;
+  z-index: 998;
+  background-color: ${({theme}) => theme.secondary};
+  
 `;
 
 export const LinkWrapper = styled.li`
@@ -109,17 +122,17 @@ export const LinkWrapper = styled.li`
     text-transform: uppercase;
 `;
 
-export const Link = styled(Nav)`
-    margin: 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
 
-    :hover {
-        color: ${({ theme }) => theme.secondary};
-    }
+export const Link = styled(NaviLink)`
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 8px;
+  font-weight: 400;
 
-    @media (max-width: 64em) {
-        color: ${({ theme }) => theme.secondary};
-        text-decoration: underline;
-    }
+  :hover {
+    color: ${({ theme }) => theme.accent};
+  }
 `;
