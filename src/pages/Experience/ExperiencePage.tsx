@@ -11,6 +11,7 @@ import { Footer } from "../../components/Footer";
 import {
     ExperiencePageContainer,
     ExperienceContainer,
+    List,
 } from "./ExperiencePage.styled";
 import tulip from "../../assets/tulip.png";
 import scissors from "../../assets/scissors.png";
@@ -28,13 +29,13 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                 <ExperienceContainer>
                     <Card width={700}>
                         <CardHeader
-                            date="Jun. 2022 - Present"
+                            date="Sep. 2022 - Present"
                             title="Cutsbyjz"
                             avatar={<img alt="scissors" src={scissors} height={25} color={"#945656"}/>}
                             avatarLink="https://google.ca"
                         />
                         <CardContent>
-                            <ul>
+                            <List>
                                 <li>
                                     Working as a freelance full-stack developer in a 
                                     team of 2 to develop a personal barber website
@@ -55,10 +56,10 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                                     Setup continuous deployment for the development and 
                                     production environments on Netlify
                                 </li>
-                            </ul>
+                            </List>
                         </CardContent>
                         <CardFooter>
-                            React Golang PostgreSQL CircleCI Styled-components{" "}
+                            React Golang PostgreSQL CircleCI Netlify Styled-components{" "}
                         </CardFooter>
                     </Card>
                 </ExperienceContainer>
@@ -71,7 +72,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                             avatarLink="https://tulip.com"
                         />
                         <CardContent>
-                            <ul>
+                            <List>
                                 <li>
                                     Developed the API for Tulip iDevices for the
                                     Adyen Payment API integration feature using
@@ -105,7 +106,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                                     Assisted in the onboarding of 3 new members 
                                     to the Checkout Team
                                 </li>
-                            </ul>
+                            </List>
                         </CardContent>
                         <CardFooter>
                             PHP MySQL Python Golang Docker APIs Optimization{" "}

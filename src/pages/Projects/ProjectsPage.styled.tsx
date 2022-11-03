@@ -5,7 +5,7 @@ export const ProjectsPageContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 12rem;
+    padding-top: 14rem;
     padding-bottom: 4rem;
 
     @media (max-width: 64em) {
@@ -18,10 +18,10 @@ export const ProjectContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 4rem;
 
     @media (max-width: 64em) {
-        width: 650px;
+        width: 40rem;
     }
 
     @media (max-width: 48em) {
@@ -36,3 +36,7 @@ export const ProjectContainer = styled.div`
         width: 300px;
     }
 `;
+
+export const List = styled.ul`
+    list-style-type: circle;
+`
