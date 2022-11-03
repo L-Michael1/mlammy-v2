@@ -50,6 +50,7 @@ export const CardsContainer = styled.div`
 `;
 
 export const SubHeading = styled.h2`
+    color: ${({theme}) => theme.primary};
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
