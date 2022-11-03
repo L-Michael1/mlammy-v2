@@ -49,7 +49,7 @@ export const languages: SkillsType = [
     },
     {
         icon: c,
-        name: "C",
+        name: "C/C++",
     },
 ];
 
