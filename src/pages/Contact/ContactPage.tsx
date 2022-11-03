@@ -29,11 +29,11 @@ const ContactPage: React.FC<PageProps> = ({themeType, toggleTheme}) => {
                 <DescriptionContainer>
                     <Description>
                         <DescriptionHeader>LinkedIn</DescriptionHeader>
-                        <Link href="www.linkedin.com/in/mlam977" target="_blank">www.linkedin.com/in/mlam977</Link>
+                        <Link href="https://www.linkedin.com/in/mlam977" target="_blank">www.linkedin.com/in/mlam977</Link>
                     </Description>
                     <Description>
                         <DescriptionHeader>GitHub</DescriptionHeader>
-                        <Link href="www.github.com/L-Michael1" target="_blank">www.github.com/L-Michael1</Link>
+                        <Link href="https://www.github.com/L-Michael1" target="_blank">www.github.com/L-Michael1</Link>
                     </Description>
                     <Description>
                         <DescriptionHeader>Email Address</DescriptionHeader>
