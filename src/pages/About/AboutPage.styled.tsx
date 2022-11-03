@@ -74,6 +74,10 @@ export const Description = styled.div`
     padding-right: 4rem;
     width: 100%;
 
+    @media (max-width: 96em) {
+        padding-right: 2rem;
+    }
+
     @media (max-width: 64em) {
         padding-bottom: 2rem;
     }
