@@ -13,7 +13,7 @@ import {
     ExperienceContainer,
 } from "./ExperiencePage.styled";
 import tulip from "../../assets/tulip.png";
-import muscle from "../../assets/muscle.png";
+import scissors from "../../assets/scissors.png";
 import { Container } from "../../global.styled";
 
 const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
@@ -29,37 +29,36 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                     <Card width={700}>
                         <CardHeader
                             date="Jun. 2022 - Present"
-                            title="Aptitude"
-                            avatar={<img alt="muscle" src={muscle} height={25} />}
+                            title="Cutsbyjz"
+                            avatar={<img alt="scissors" src={scissors} height={25} color={"#945656"}/>}
                             avatarLink="https://google.ca"
                         />
                         <CardContent>
                             <ul>
                                 <li>
-                                    Working as a full-stack developer in a team
-                                    of 3 to develop a social media platform
-                                    catered towards the fitness community - one
-                                    where people can track progress, share
-                                    progress, and join exclusive communities to
-                                    access private workouts
+                                    Working as a freelance full-stack developer in a 
+                                    team of 2 to develop a personal barber website
                                 </li>
                                 <li>
-                                    Implemented the authentication and
-                                    authorization microservice using JWTs
-                                    written in Golang
+                                    Designed and implemented various re-usable 
+                                    components for numerous pages
                                 </li>
                                 <li>
-                                    Created various re-usable components in
-                                    React-Native and numerous screens
+                                    Implementing the appointment booking 
+                                    system in Go and PostgreSQL
                                 </li>
                                 <li>
-                                    Assisted in creating queries and mutations
-                                    of the main API written in GraphQL
+                                    Setup a CircleCI pipeline to automate the testing 
+                                    suite
+                                </li>
+                                <li>
+                                    Setup continuous deployment for the development and 
+                                    production environments on Netlify
                                 </li>
                             </ul>
                         </CardContent>
                         <CardFooter>
-                            React-Native Golang PostgreSQL GraphQL Docker{" "}
+                            React Golang PostgreSQL CircleCI Styled-components{" "}
                         </CardFooter>
                     </Card>
                 </ExperienceContainer>
@@ -85,23 +84,26 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                                     MySQL
                                 </li>
                                 <li>
-                                    Optimized various MySQL queries and reduced
-                                    the time complexity of multiple functions to
-                                    improve the performance of the Assisted
+                                    Optimized various MySQL queries and internal 
+                                    functions to improve the performance of the Assisted
                                     Selling application
                                 </li>
                                 <li>
-                                    Cleaned up numerous functions to reduce
-                                    errors and warnings in GCP logs for a major
-                                    API container by ~90%
+                                    Cleaned up numerous PHP functions to reduce
+                                    errors and warnings in GCP logs for the primary
+                                    API container by 90%
                                 </li>
                                 <li>
-                                    Used Postman to test APIs. and used VSTS to
+                                    Used Grafana to create a monitoring panel that 
+                                    alerts on extended API downtime
+                                </li>
+                                <li>
+                                    Used Postman to test APIs, and used VSTS to
                                     manage and organize tickets
                                 </li>
                                 <li>
-                                    Assisted in the onboarding process of new
-                                    members to the Checkout Team
+                                    Assisted in the onboarding of 3 new members 
+                                    to the Checkout Team
                                 </li>
                             </ul>
                         </CardContent>

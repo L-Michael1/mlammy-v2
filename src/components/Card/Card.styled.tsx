@@ -27,7 +27,7 @@ export const Link = styled.a`
 `;
 
 export const Title = styled.h3`
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.accent};
 `;
 
 export const Date = styled.span`
@@ -39,10 +39,15 @@ export const Date = styled.span`
 export const ContentContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1.5rem;
 `;
 
 export const Content = styled.span`
     color: ${({ theme }) => theme.primary};
+
+    @media (max-width: 32rem) {
+        font-size: 0.9rem;
+    }
 `
 
 // CardFooter
@@ -51,6 +56,10 @@ export const FooterContainer = styled.div`
     padding-top: 1rem;
     color: ${({ theme }) => theme.primary};
     word-spacing: 1rem;
+
+    @media (max-width: 32rem) {
+        font-size: 0.9rem;
+    }
 `;
 
 // Card
@@ -65,5 +74,5 @@ export const CardContainer = styled(motion.div) <CardContainerProps>`
     width: ${({ width }) => `${width}px` ?? "100px"};
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: ${({ theme }) => `1px 1px 2px 2px ${theme.shadow}`};
+    box-shadow: ${({ theme }) => `0px 0px 2px 1px ${theme.feint}`};
 `;

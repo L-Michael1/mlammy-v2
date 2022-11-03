@@ -6,7 +6,7 @@ export const ExperiencePageContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 12rem;
+    padding-top: 14rem;
     padding-bottom: 4rem;
 
     @media (max-width: 64em) {
@@ -19,10 +19,10 @@ export const ExperienceContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 4rem;
 
     @media (max-width: 64em) {
-        width: 650px;
+        width: 40rem;
     }
 
     @media (max-width: 48em) {

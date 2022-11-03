@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     h2,
     h3 {
         font-family: 'Inter', sans-serif;
-        text-transform: uppercase;
     }
 
     code {

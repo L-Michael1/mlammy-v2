@@ -26,8 +26,8 @@ const AboutScreen: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
             <Navbar themeType={themeType} toggleTheme={toggleTheme} />
             <AboutPageContainer>
                 <HeaderContainer>
-                    <Header>About&nbsp;</Header>
-                    <SubHeader>Me</SubHeader>
+                    <Header>ABOUT&nbsp;</Header>
+                    <SubHeader>ME</SubHeader>
                 </HeaderContainer>
                 <DescriptionContainer>
                     <Description>
