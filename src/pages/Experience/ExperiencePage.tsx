@@ -30,7 +30,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
           <Card width={700}>
             <CardHeader
               date="Sep. 2022 - Present"
-              title="Cutsbyjz"
+              title="Cutsbyjz - Full Stack Developer"
               avatar={
                 <img
                   alt="scissors"
@@ -109,7 +109,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
               </List>
             </CardContent>
             <CardFooter>
-              PHP MySQL Python Golang Docker APIs Optimization{" "}
+              PHP MySQL Phinx Python Golang Docker APIs Optimization{" "}
             </CardFooter>
           </Card>
         </ExperienceContainer>
