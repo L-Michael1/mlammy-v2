@@ -16,6 +16,7 @@ import docker from "../../assets/icons/docker.svg";
 import git from "../../assets/icons/git.svg";
 import go from "../../assets/icons/go.svg";
 import postgresql from "../../assets/icons/postgresql.svg";
+import prisma from "../../assets/icons/light-prisma.svg";
 
 type SkillsType = Array<{
     icon: string;
@@ -86,6 +87,10 @@ export const technologies: SkillsType = [
         icon: firebase,
         name: "Firebase",
     },
+    {
+        icon: prisma,
+        name: "Prisma"
+    }
 ];
 
 export const tools: SkillsType = [
