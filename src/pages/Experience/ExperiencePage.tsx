@@ -39,13 +39,13 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                   color={"#945656"}
                 />
               }
-              avatarLink="https://google.ca"
+              avatarLink="https://cutsbyjz.netlify.app/"
             />
             <CardContent>
               <List>
                 <li>
-                  Working as a freelance full-stack developer in a team of 2 to
-                  develop a personal barber website
+                  Working as a freelance full-stack developer in a team of two
+                  to develop a personal barber website
                 </li>
                 <li>
                   Designed and implemented various re-usable components for
@@ -55,7 +55,7 @@ const ExperiencePage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                   Implementing the appointment booking system in Express and
                   PostgreSQL with Prisma
                 </li>
-                <li>Setup a CircleCI pipeline to automate the testing suite</li>
+                <li>Setup the CircleCI pipeline for continuous integration</li>
                 <li>
                   Setup continuous deployment for the development and production
                   environments on Netlify
