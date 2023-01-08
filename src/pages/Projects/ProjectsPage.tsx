@@ -28,7 +28,7 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
         <ProjectContainer>
           <Card width={700}>
             <CardHeader
-              date="Nov. 2022 - Present"
+              date="Dec. 2022 - Present"
               title="Kaizen"
               avatar={<AiOutlineLink />}
               avatarLink="https://google.ca"
@@ -40,8 +40,14 @@ const ProjectsPage: React.FC<PageProps> = ({ themeType, toggleTheme }) => {
                   productivity web-app that allows users to create personal
                   to-dos, habits, and journal entries
                 </li>
-                <li>Designed the UI in Figma...tbd</li>
-                <li>Developed an automated test suite using...tbd</li>
+                <li>
+                  Implements a reward-system to imitate temptation-bundling for
+                  better habit-making
+                </li>
+                <li>
+                  Implemented a CircleCI pipeline for continuous integration
+                </li>
+                <li>Designed the UI in Figma</li>
               </List>
             </CardContent>
             <CardFooter>
